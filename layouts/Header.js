@@ -849,12 +849,12 @@ const Header3 = ({ single }) => {
                   <div className="icon">
                     <i className="fas fa-phone-alt" />
                   </div>
-                  <div className="content">
+                  {/* <div className="content">
                     <p>Make A Call</p>
                     <h4>
                       <a href="tel:+00012345688">+000 (123) 456 88</a>
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="header-button d-none d-lg-block d-xl-block">
                   <Link href="/Subscription" className="theme-btn bg-2">

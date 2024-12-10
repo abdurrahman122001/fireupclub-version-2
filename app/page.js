@@ -197,11 +197,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">Global Investment Opportunities</Link>
+                      <Link href="Subscription">Global Investment Opportunities</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our Global Investment Opportunities service connects you with experienced financial experts who provide insights into international markets.</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -217,13 +217,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">
+                      <Link href="Subscription">
                         Crypto Trading
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>We equip you with proven strategies to diversify your portfolio with global investment opportunities, explore the dynamic</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -237,13 +237,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">
+                      <Link href="Subscription">
                         E-Commerce
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our service helps aspiring entrepreneurs turn their ideas into successful ventures. Through our consultancy, you receive step-by-step</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -262,11 +262,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">Financial Planning & Real Estate Investment</Link>
+                      <Link href="Subscription">Financial Planning & Real Estate Investment</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our personalized financial planning services are designed to help you build a strategy that supports your goal</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -280,13 +280,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">
+                      <Link href="Subscription">
                         Digital Books Creation
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Unlock your earning potential with Fire Up Club’s Digital Books Creation service. Whether you’re an aspiring author</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -300,13 +300,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">
+                      <Link href="Subscription">
                         Immigration
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>We help you develop a robust financial plan, invest in real estate, explore immigration opportunities, and provide</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -323,11 +323,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">Content Creation Personal Branding</Link>
+                      <Link href="Subscription">Content Creation Personal Branding</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Join our Earning Through Content Creation group to learn how to effectively monetize your online presence. Led</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -345,13 +345,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="service-details">
+                      <Link href="Subscription">
                         Personalized Tax Planning
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our</p>
                   </div>
-                  <Link href="service-details" className="arrow-icon">
+                  <Link href="Subscription" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -501,17 +501,17 @@ const page = () => {
                     completing our brief questionnaire. If you’re a good fit,
                     we’ll extend a personal invitation to join us.
                   </p>
-                  <button
+                  <a href="Subscription"> <button
                     className="theme-btn bg-2"
                     onClick={openModal}
                   >
                     Get Started Now
-                  </button>
+                  </button></a>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="video-image">
-                  <img src="assets/img/video-thumbnail.png" alt="img" />
+                  <img src="assets/img/video-thumbnail.PNG" alt="img" />
                   <div className="video-box">
                     <button
                       className="video-buttton ripple"
