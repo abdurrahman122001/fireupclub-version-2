@@ -362,7 +362,7 @@ const page = () => {
         </div>
       </section>
       {/* About Section Start */}
-      <section className="about-section-3 section-padding pt-0" id="about">
+      <section className="about-section-3 section-padding pt-0">
         <div className="container">
           <div className="about-wrapper-2">
             <div className="row g-4">
