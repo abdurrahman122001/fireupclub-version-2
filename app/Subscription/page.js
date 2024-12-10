@@ -727,7 +727,7 @@ useEffect(() => {
                               {...field}
                               isMulti // Enable multiple selection
                               options={[
-                                { value: "ecommerce", label: "E-Commerce:" },
+                                { value: "ecommerce", label: "E-Commerce" },
                                 { value: "digital_books", label: "Digital Books Creationy" },
                                 { value: "crypto_tading", label: "Crypto Trading" },
                                 { value: "financial_planning", label: "Financial Planning" },
