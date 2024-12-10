@@ -12,9 +12,35 @@ import axios from "axios";
 
 const PaymentForm = () => {
     const [showOccupationField, setShowOccupationField] = useState(false);
+    const [selectedPrice, setSelectedPrice] = useState(null); // For selected price
     const [selectedPlan, setSelectedPlan] = useState(null); // For selected plan
     const [totalPrice, setTotalPrice] = useState(null); // For dynamic total price
     const [selectedPlanLabel, setSelectedPlanLabel] = useState(null);
+    const [goalCategories, setGoalCategories] = useState([]);
+    const [industries, setIndustries] = useState([]);
+    const [filteredGoals, setFilteredGoals] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [loadingGoals, setLoadingGoals] = useState(false);
+    const { handleSubmit, control, trigger, formState: { errors } } = useForm({
+        defaultValues: {
+            plan: "",
+            phone: "",
+            email: "",
+            nationality: "",
+            residence: "",
+            age: "",
+            linkedin: "",
+            occupation: "",
+            industry: "",
+            experience: "",
+            income: "",
+            financial_goals: "", // Multi-select as an array
+            specify_financial_goals: "", // Multi-select as an array
+            net_worth: "",
+            skills: "", // Multi-select as an array
+            retire_years: "",
+        },
+    });
     const stepAnimation = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 },
