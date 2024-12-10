@@ -241,8 +241,7 @@ const Footer2 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  From setting your first financial goal to celebrating your early retirement, we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -421,8 +420,7 @@ const Footer3 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  From setting your first financial goal to celebrating your early retirement, we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -580,8 +578,7 @@ const Footer4 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  From setting your first financial goal to celebrating your early retirement, we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -753,8 +750,7 @@ const Footer6 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  From setting your first financial goal to celebrating your early retirement, we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
