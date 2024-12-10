@@ -113,7 +113,7 @@ const Footer1 = () => {
                     </div>
                     <div className="content">
                       <p>
-                        Detroit, Michigan, United States
+                      162 Roundhay Rd, Harehills, Leeds LS8 5PL
                       </p>
                     </div>
                   </div>
