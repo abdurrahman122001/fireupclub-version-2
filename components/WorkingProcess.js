@@ -113,11 +113,10 @@ export const WorkingProcess2 = () => {
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">
             <img src="assets/img/bale.png" alt="img" />
-            Working Process
+            Achieve Financial Freedom
           </span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-            We Complete Our Work to Follow <br />
-            Some Easy Ways
+          Achieve Financial Freedom in 3 Easy Steps
           </h2>
         </div>
         <div className="work-process-wrapper">
