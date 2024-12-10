@@ -54,8 +54,8 @@ const Footer1 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  From setting your first financial goal to celebrating your early retirement,
+                  we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -516,7 +516,7 @@ const Footer3 = () => {
                   <h4>Newsletter</h4>
                 </div>
                 <div className="footer-content">
-                  <p>Get more update to join Us</p>
+                  <p>Subscribe our newsletter to get our latest update & news</p>
                   <div className="footer-input">
                     <input type="email" id="email" placeholder="Your Email" />
                     <button className="newsletter-btn" type="submit">
@@ -676,7 +676,7 @@ const Footer4 = () => {
                   <h4>Newsletter</h4>
                 </div>
                 <div className="footer-content">
-                  <p>Get more update to join Us</p>
+                  <p>Subscribe our newsletter to get our latest update & news</p>
                   <div className="footer-input">
                     <input type="email" id="email" placeholder="Your Email" />
                     <button className="newsletter-btn" type="submit">

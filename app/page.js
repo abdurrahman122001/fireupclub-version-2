@@ -182,8 +182,7 @@ const page = () => {
               What We Offer
             </span>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Business integrates with all <br />
-              your favorite tools
+               Our Services
             </h2>
           </div>
           <div className="row">

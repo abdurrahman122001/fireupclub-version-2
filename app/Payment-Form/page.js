@@ -297,7 +297,7 @@ const PaymentForm = () => {
                     )}
                     {totalPrice && (
                       <div>
-                        <h3 style={{ color: "#dbe0de" }}>Selected Price</h3>
+                        <h3 style={{ color: "#dbe0de" }}>Selected Plan</h3>
                         <p style={{ color: "#dbe0de", fontSize: "18px" }}>
                           Total: ${totalPrice}
                         </p>
