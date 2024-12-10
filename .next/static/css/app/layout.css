@@ -23121,8 +23121,11 @@ p.sticky-label {
 }
 
 /* General Styling */
-.multiform-section{
-  background-image: url(/assets/img/bg.svg);
+.multiform-section {
+  /* background-color: #171717; */
+  background-image: url(/_next/static/media/download.b6416c2d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .multiform-section .bg-cover{
   background-repeat: no-repeat;
@@ -23132,7 +23135,7 @@ p.sticky-label {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* background-color: #0129299e; */
+  background-color: #000000db;
 }
 .multi-form-items .form-group input{
   padding: 10px 4px;
