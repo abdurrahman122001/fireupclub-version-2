@@ -10010,7 +10010,8 @@ p.sticky-label {
 
 /* General Styling */
 .multiform-section{
-  background-image: url(/assets/img/bg.svg);
+  /* background-image: url(/assets/img/bg.svg); */
+  background-color: black;
 }
 .multiform-section .bg-cover{
   background-repeat: no-repeat;
