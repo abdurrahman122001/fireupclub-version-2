@@ -128,7 +128,7 @@ useEffect(() => {
             data.skills = data.skills.join(',');
         }
 
-        const response = await axios.post("http://127.0.0.1:8000/api/subscription", data);
+        const response = await axios.post("https://innand.com/api/subscription", data);
 
         setTimeout(() => {
             setLoading(false);
