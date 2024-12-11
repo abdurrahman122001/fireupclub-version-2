@@ -768,7 +768,7 @@ const Header2 = ({ single }) => {
   const singleMenu = [
     { id: 1, href: "about", title: "About" },
     { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "testimonial", title: "Success Stories" },
+    { id: 3, href: "clients", title: "Success Stories" },
   ];
 
   const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -824,7 +824,7 @@ const Header3 = ({ single }) => {
   const singleMenu = [
     { id: 1, href: "about", title: "About" },
     { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "testimonial", title: "Success Stories" },
+    { id: 3, href: "clients", title: "Success Stories" },
   ];
   return (
     <Fragment>

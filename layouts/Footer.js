@@ -455,7 +455,7 @@ const Footer3 = () => {
                     <Link href="#services">Services</Link>
                   </li>
                   <li>
-                    <Link href="/#testimonial">Success &amp; Stories</Link>
+                    <Link href="/#clients">Success &amp; Stories</Link>
                   </li>
 
                 </ul>
