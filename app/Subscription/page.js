@@ -444,7 +444,7 @@ useEffect(() => {
                                 validate: (value) => {
                                   if (!value) return "Industry is required.";
                                   if (value === "other" && !customIndustry.trim()) {
-                                    return "Please provide a industry below.";
+                                    return "Please provide an industry below.";
                                   }
                                   return true;
                                 },
