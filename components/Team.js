@@ -19,6 +19,7 @@ const teamMembers = [
     role: "Technical Analyst",
     image: "assets/img/team/02.webp",
     socialLinks: {
+
     },
   },
   {
@@ -26,9 +27,6 @@ const teamMembers = [
     role: "E-Commerce Expert",
     image: "assets/img/team/03.webp",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
     },
   },
   {
@@ -36,9 +34,7 @@ const teamMembers = [
     role: "Content Creator & Youtuber",
     image: "assets/img/team/04.webp",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/nafees-mazhar-youtuber/",
     },
   },
   {
@@ -46,9 +42,7 @@ const teamMembers = [
     role: "Portfolio Management Expert",
     image: "assets/img/team/05.webp",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/faridaliani/",
     },
   },
   {
@@ -56,9 +50,6 @@ const teamMembers = [
     role: "Amazon Kdp Expert",
     image: "assets/img/team/06.webp",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
     },
   },
   {
@@ -66,16 +57,15 @@ const teamMembers = [
     role: "Tax Consultant",
     image: "assets/img/team/07.webp",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+
+      linkedin: "https://www.linkedin.com/in/syed-rehan-kazmi-fca-icap-aca-icaew-b9b99825/",
     },
   },
 ];
 
 const Team = () => {
   return (
-    <section className="team-section fix team-bg section-padding" >
+    <section className="team-section fix team-bg section-padding" id="about">
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">
@@ -118,7 +108,7 @@ const Team = () => {
                 </div>
                 <div className="team-content">
                   <h4>
-                    <a href="team-details">Nabeel Shaikh – FCA</a>
+                    Nabeel Shaikh – FCA
                   </h4>
                   <p>Founder</p>
                 </div>
@@ -155,23 +145,8 @@ const Team = () => {
                       <div className="icon-list">
                         <ul>
                           <li>
-                            <a href={member.socialLinks.facebook}>
-                              <i className="fab fa-facebook-f" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href={member.socialLinks.twitter}>
-                              <i className="fab fa-twitter" />
-                            </a>
-                          </li>
-                          <li>
                             <a href={member.socialLinks.linkedin}>
                               <i className="fab fa-linkedin-in" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href={member.socialLinks.pinterest}>
-                              <i className="fab fa-pinterest-p" />
                             </a>
                           </li>
                         </ul>
@@ -179,7 +154,7 @@ const Team = () => {
                     </div>
                     <div className="team-content">
                       <h4>
-                        <a href="team-details">{member.name}</a>
+                        {member.name}
                       </h4>
                       <p>{member.role}</p>
                     </div>

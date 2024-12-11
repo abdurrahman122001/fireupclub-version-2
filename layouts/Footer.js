@@ -423,17 +423,14 @@ const Footer3 = () => {
                   From setting your first financial goal to celebrating your early retirement, we’re with you every step of the way.
                   </p>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
+                    <a href="https://www.facebook.com/people/FU-Club/61567838861680/">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
+                    <a href="https://www.instagram.com/fireupclub12/">
+                      <i className="fab fa-instagram" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
+                    <a href="https://www.linkedin.com/company/fireupclub/">
+                      <i className="fab fa-linkedin" />
                     </a>
                   </div>
                 </div>
@@ -460,6 +457,7 @@ const Footer3 = () => {
                   <li>
                     <Link href="/#testimonial">Success &amp; Stories</Link>
                   </li>
+
                 </ul>
               </div>
             </div>
