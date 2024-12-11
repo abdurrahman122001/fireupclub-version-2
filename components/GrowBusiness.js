@@ -38,44 +38,7 @@ const GrowBusiness = ({ paddingTop = 0 }) => {
                 reduce financial stress, and create opportunities to retire early. Empower 
                 yourself to live the life you’ve always envisioned, free from financial constraints.
                 </p>
-                <div className="grow-counting-area">
-                  <div
-                    className="grow-counting-items wow fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <h2>
-                      <span className="count">
-                        <Counter end={85} />
-                      </span>
-                      %
-                    </h2>
-                    <p>Increase Sales</p>
-                  </div>
-                  <div
-                    className="grow-counting-items wow fadeInUp"
-                    data-wow-delay=".5s"
-                  >
-                    <h2>
-                      <span className="count">
-                        <Counter end={15} />
-                      </span>
-                      %
-                    </h2>
-                    <p>Reduced Losses</p>
-                  </div>
-                  <div
-                    className="grow-counting-items wow fadeInUp"
-                    data-wow-delay=".7s"
-                  >
-                    <h2>
-                      <span className="count">
-                        <Counter end={93} />
-                      </span>
-                      %
-                    </h2>
-                    <p>Business growth</p>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>

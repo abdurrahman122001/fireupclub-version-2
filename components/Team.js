@@ -75,7 +75,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="team-section fix team-bg section-padding" id="about">
+    <section className="team-section fix team-bg section-padding" >
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">

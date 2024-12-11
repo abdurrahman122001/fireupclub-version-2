@@ -1,4 +1,4 @@
-// File: C:\xampp\htdocs\fireupclub_version_2\resources\next\app\layout.js
+// File: C:\Users\Mavens Advisor\Desktop\fireupclub-version-2\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

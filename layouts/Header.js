@@ -822,7 +822,7 @@ const Header2 = ({ single }) => {
 const Header3 = ({ single }) => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
   const singleMenu = [
-    { id: 1, href: "about", title: "Team" },
+    { id: 1, href: "about", title: "About" },
     { id: 2, href: "services", title: "Services" },
     { id: 3, href: "testimonial", title: "Success Stories" },
   ];

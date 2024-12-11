@@ -452,13 +452,13 @@ const Footer3 = () => {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="#team">About Us</Link>
-                  </li>
-                  <li>
-                    <Link href="/#testimonial">Success &amp; Stories</Link>
+                    <Link href="#about">About</Link>
                   </li>
                   <li>
                     <Link href="#services">Services</Link>
+                  </li>
+                  <li>
+                    <Link href="/#testimonial">Success &amp; Stories</Link>
                   </li>
                 </ul>
               </div>

@@ -111,7 +111,7 @@ const page = () => {
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="news-details">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-1">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -136,7 +136,7 @@ const page = () => {
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="news-details">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-2">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -161,7 +161,7 @@ const page = () => {
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="news-details">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-3">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -362,7 +362,7 @@ const page = () => {
         </div>
       </section>
       {/* About Section Start */}
-      <section className="about-section-3 section-padding pt-0">
+      <section className="about-section-3 section-padding pt-0" id="about">
         <div className="container">
           <div className="about-wrapper-2">
             <div className="row g-4">
@@ -431,7 +431,7 @@ const page = () => {
                         <div className="about-counter-items">
                           <h2>
                             <span className="count">
-                              <Counter end={35} />
+                              <Counter end={95} />
                             </span>
                             %
                           </h2>
@@ -471,13 +471,13 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <Link
+                  {/* <Link
                     href="about"
                     className="theme-btn wow fadeInUp"
                     data-wow-delay=".4s"
                   >
                     Learn More Us <i className="far fa-arrow-right" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -501,7 +501,7 @@ const page = () => {
                     we’ll extend a personal invitation to join us.
                   </p>
                   <a href="Subscription"> <button
-                    className="theme-btn bg-2"
+                    className="theme-btn bg-2 get-started-btn"
                     onClick={openModal}
                   >
                     Get Started Now
