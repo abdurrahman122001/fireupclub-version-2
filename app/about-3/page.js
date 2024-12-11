@@ -102,7 +102,7 @@ const page = () => {
               <img src="assets/img/bale.png" alt="img" />
               Clients Feedback
             </span>
-            <h2>We’ve 1250+ Global Clients Say Us</h2>
+            <h2>Our Client Say</h2>
           </div>
         </div>
         <TestimonialSlider2 />
