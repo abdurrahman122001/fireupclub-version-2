@@ -25,6 +25,7 @@
     "react-select": "^5.8.3",
     "react-visibility-sensor": "^5.1.1",
     "swiper": "^11.1.4",
+    "video.js": "^8.21.0",
     "world-countries": "^5.0.0",
     "wowjs": "^1.1.3"
   }

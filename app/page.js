@@ -31,7 +31,7 @@ const page = () => {
     };
   }, []);
   return (
-    <NextLayout header={3} footer={3} single>
+    <NextLayout header={2} footer={3} single>
       {/* Hero Section Start */}
       <section className="hero-section hero-3">
         <div className="bottom-shape">
@@ -62,13 +62,7 @@ const page = () => {
                   >
                     Subscribe Now <i className="far fa-arrow-right" />
                   </Link>
-                  {/* <Link
-                    href="service"
-                    className="btn-link wow fadeInUp"
-                    data-wow-delay=".8s"
-                  >
-                    View Services <i className="far fa-arrow-right" />
-                  </Link> */}
+
                 </div>
               </div>
             </div>
@@ -99,14 +93,16 @@ const page = () => {
               data-wow-delay=".3s"
             >
               <div className="news-card-items">
+              <Link href="about-2">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/financial-support.webp")' }}
+                  style={{ backgroundImage: 'url("assets/img/about/financial-support.jpg")' }}
                 />
+                </Link>
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="news-details">
+                    <Link href="about-1">
                       Personalized Support
                     </Link>
                   </h3>
@@ -124,14 +120,16 @@ const page = () => {
               data-wow-delay=".5s"
             >
               <div className="news-card-items">
+              <Link href="about-2">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/step-by-step.webp")' }}
+                  style={{ backgroundImage: 'url("assets/img/about/step-by-step.jpg")' }}
                 />
+                </Link>
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="news-details">
+                    <Link href="about-2">
                       Step-by-Step Guidance
                     </Link>
                   </h3>
@@ -149,14 +147,16 @@ const page = () => {
               data-wow-delay=".7s"
             >
               <div className="news-card-items">
+              <Link href="about-3">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/exclusive.webp")' }}
+                  style={{ backgroundImage: 'url("assets/img/about/exclusive-access.jpg")' }}
                 />
+                </Link>
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="news-details">
+                    <Link href="about-3">
                       Exclusive Access
                     </Link>
                   </h3>
@@ -196,11 +196,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">Global Investment Opportunities</Link>
+                      <Link href="global-investment">Global Investment Opportunities</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our Global Investment Opportunities service connects you with experienced financial experts who provide insights into international markets.</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="global-investment" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -216,13 +216,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">
+                      <Link href="crypto-trading">
                         Crypto Trading
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>We equip you with proven strategies to diversify your portfolio with global investment opportunities, explore the dynamic</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="crypto-trading" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -236,13 +236,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">
+                      <Link href="ecommerce">
                         E-Commerce
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our service helps aspiring entrepreneurs turn their ideas into successful ventures. Through our consultancy, you receive step-by-step</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="ecommerce" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -261,11 +261,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">Financial Planning & Real Estate Investment</Link>
+                      <Link href="financial-planning">Financial Planning & Real Estate Investment</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Our personalized financial planning services are designed to help you build a strategy that supports your goal</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="financial-planning" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -279,13 +279,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">
+                      <Link href="digital-books">
                         Digital Books Creation
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Unlock your earning potential with Fire Up Club’s Digital Books Creation service. Whether you’re an aspiring author</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="digital-books" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -299,13 +299,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">
+                      <Link href="immigration">
                         Immigration
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>We help you develop a robust financial plan, invest in real estate, explore immigration opportunities, and provide</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="immigration" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -322,11 +322,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">Content Creation Personal Branding</Link>
+                      <Link href="content-creation">Content Creation Personal Branding</Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Join our Earning Through Content Creation group to learn how to effectively monetize your online presence. Led</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="content-creation" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -344,13 +344,13 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="Subscription">
+                      <Link href="tax-planning">
                         Personalized Tax Planning
                       </Link>
                     </h3>
                     <p style={{ fontSize: '14px' }}>Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our</p>
                   </div>
-                  <Link href="Subscription" className="arrow-icon">
+                  <Link href="tax-planning" className="arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -417,7 +417,7 @@ const page = () => {
                           <h2>
                             <span className="count">
                               {" "}
-                              <Counter end={98} />
+                              <Counter end={90} />
                             </span>
                             %
                           </h2>
@@ -431,11 +431,11 @@ const page = () => {
                         <div className="about-counter-items">
                           <h2>
                             <span className="count">
-                              <Counter end={95} />
+                              <Counter end={80} />
                             </span>
                             %
                           </h2>
-                          <p>Community Support Satisfaction
+                          <p>Financial Independence Achieved
                           </p>
                         </div>
                       </div>
@@ -447,11 +447,11 @@ const page = () => {
                           <h2>
                             <span className="count">
                               {" "}
-                              <Counter end={98} />
+                              <Counter end={95} />
                             </span>
                             %
                           </h2>
-                          <p>Positive Customer Review</p>
+                          <p>Community Support Satisfaction</p>
                         </div>
                       </div>
                       <div
@@ -462,22 +462,16 @@ const page = () => {
                           <h2>
                             <span className="count">
                               {" "}
-                              <Counter end={92} />
+                              <Counter end={2} />
                             </span>
-                            %
+                            K
                           </h2>
-                          <p>Professional Team Members</p>
+                          <p>Subscribers</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  {/* <Link
-                    href="about"
-                    className="theme-btn wow fadeInUp"
-                    data-wow-delay=".4s"
-                  >
-                    Learn More Us <i className="far fa-arrow-right" />
-                  </Link> */}
+
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 const page = () => {
   return (
-    <NextLayout>
+    <NextLayout header={3} footer={3} single>
       <Breadcrumb pageName="Error 404" />
       <div className="error-section fix section-padding">
         <div className="container">
@@ -11,7 +11,8 @@ const page = () => {
             <div className="col-lg-6">
               <div className="error-items text-center">
                 <div className="error-image wow fadeInUp" data-wow-delay=".3s">
-                  <img src="assets/img/error.png" alt="img" />
+                  <h1 style={{ color: 'var(--theme)' }}>404 - Not Found</h1>
+                  <p>It looks like nothing was found at this location.</p>
                 </div>
                 <Link
                   href="/"

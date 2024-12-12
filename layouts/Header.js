@@ -1,25 +1,22 @@
-"use client";
-import { nextUtility } from "@/utility";
-import Link from "next/link";
+"use client"; // Add this at the top to ensure this is a client-side component
+
 import { Fragment, useEffect, useState } from "react";
+import Link from "next/link";
+import { nextUtility } from "@/utility";
+
+
 const Header = ({ header, single }) => {
   useEffect(() => {
     nextUtility.stickyNav();
   }, []);
 
   switch (header) {
-    case 1:
-      return <Header1 single={single} />;
     case 2:
       return <Header2 single={single} />;
     case 3:
       return <Header3 single={single} />;
-    case 5:
-      return <Header5 single={single} />;
-    case 6:
-      return <Header6 single={single} />;
     default:
-      return <Header6 single={single} />;
+      return <Header3 single={single} />;
   }
 };
 export default Header;
@@ -699,70 +696,6 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
   );
 };
 
-const Header1 = ({ single, menu }) => {
-  const [sidebarToggle, setSidebarToggle] = useState(false);
-  return (
-    <Fragment>
-      <header id="header-sticky" className="header-1">
-        <div className="container-fluid">
-          <div className="mega-menu-wrapper">
-            <div className="header-main">
-              <div className="sticky-logo">
-                <Link href="/">
-                  <img
-                    src="assets/img/logo/white-logo.svg"
-                    alt="logo-img"
-                    className="logo-1"
-                  />
-                </Link>
-                <Link href="/">
-                  <img
-                    src="assets/img/logo/black-logo.png"
-                    alt="logo-img"
-                    className="logo-2"
-                  />
-                </Link>
-              </div>
-              <div className="header-left">
-                <div className="mean__menu-wrapper">
-                  <div className="main-menu">
-                    <Menu single={single} />
-                  </div>
-                </div>
-              </div>
-              <div className="header-right d-flex justify-content-end align-items-center">
-                <div className="icon-items">
-                  <div className="icon">
-                    <i className="fas fa-phone-alt" />
-                  </div>
-                  <div className="content">
-                    <p>Make A Call</p>
-                    <h4>
-                      <a href="tel:+00012345688">+000 (123) 456 88</a>
-                    </h4>
-                  </div>
-                </div>
-                <div className="header__hamburger d-xl-block my-auto">
-                  <div
-                    className="sidebar__toggle"
-                    onClick={() => setSidebarToggle(true)}
-                  >
-                    <i className="far fa-bars" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <Sidebar
-        sidebarToggle={sidebarToggle}
-        close={() => setSidebarToggle(false)}
-        single={single}
-      />
-    </Fragment>
-  );
-};
 
 const Header2 = ({ single }) => {
   const singleMenu = [
@@ -792,7 +725,7 @@ const Header2 = ({ single }) => {
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button">
-                  <Link href="contact" className="theme-btn bg-2">
+                  <Link href="Subscription" className="theme-btn bg-2">
                     Get A Quote
                   </Link>
                 </div>
@@ -819,6 +752,7 @@ const Header2 = ({ single }) => {
   );
 };
 
+
 const Header3 = ({ single }) => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
   const singleMenu = [
@@ -828,7 +762,7 @@ const Header3 = ({ single }) => {
   ];
   return (
     <Fragment>
-      <header id="header-sticky" className="header-2">
+      <header id="header-sticky" className="header-3">
         <div className="container-fluid">
           <div className="mega-menu-wrapper">
             <div className="header-main">
@@ -845,17 +779,6 @@ const Header3 = ({ single }) => {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* <div className="icon-items">
-                  <div className="icon">
-                    <i className="fas fa-phone-alt" />
-                  </div>
-                  <div className="content">
-                    <p>Make A Call</p>
-                    <h4>
-                      <a href="tel:+00012345688">+000 (123) 456 88</a>
-                    </h4>
-                  </div>
-                </div> */}
                 <div className="header-button d-none d-lg-block d-xl-block">
                   <Link href="/Subscription" className="theme-btn bg-2">
                     Apply Now
@@ -884,109 +807,3 @@ const Header3 = ({ single }) => {
   );
 };
 
-const Header5 = ({ single }) => {
-  const [sidebarToggle, setSidebarToggle] = useState(false);
-  const singleMenu = [
-    { id: 1, href: "about", title: "About" },
-    { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "projects", title: "Projects" },
-    { id: 4, href: "contact", title: "Contact" },
-  ];
-  return (
-    <Fragment>
-      <header id="header-sticky" className="header-6">
-        <div className="container">
-          <div className="mega-menu-wrapper">
-            <div className="header-main">
-              <div className="sticky-logo">
-                <Link href="/" className="logo-1">
-                  <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
-                </Link>
-                <Link href="/" className="logo-2">
-                  <img src="assets/img/logo/black-logo.png" alt="logo-img" />
-                </Link>
-              </div>
-              <div className="header-left">
-                <div className="mean__menu-wrapper">
-                  <div className="main-menu">
-                    <Menu single={single} menu={singleMenu} />
-                  </div>
-                </div>
-              </div>
-              <div className="header-right d-flex justify-content-end align-items-center">
-                <div className="header__hamburger d-xl-block my-auto">
-                  <div
-                    className="sidebar__toggle"
-                    onClick={() => setSidebarToggle(true)}
-                  >
-                    <i className="far fa-bars" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <Sidebar
-        sidebarToggle={sidebarToggle}
-        close={() => setSidebarToggle(false)}
-        single={single}
-        menu={singleMenu}
-      />
-    </Fragment>
-  );
-};
-
-const Header6 = ({ single }) => {
-  const [sidebarToggle, setSidebarToggle] = useState(false);
-  const singleMenu = [
-    { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "feature", title: "Feature" },
-    { id: 4, href: "pricing", title: "Pricing" },
-  ];
-  return (
-    <Fragment>
-      <header id="header-sticky" className="header-3">
-        <div className="container-fluid">
-          <div className="mega-menu-wrapper">
-            <div className="header-main">
-              <div className="sticky-logo">
-                <Link href="/">
-                  <img src="assets/img/logo/black-logo.png" alt="logo-img" />
-                </Link>
-              </div>
-              <div className="header-left">
-                <div className="mean__menu-wrapper">
-                  <div className="main-menu">
-                    <Menu single={single} menu={singleMenu} />
-                  </div>
-                </div>
-              </div>
-              <div className="header-right d-flex justify-content-end align-items-center">
-                <div className="header-button">
-                  <Link href="contact" className="theme-btn bg-2">
-                    Get A Quote
-                  </Link>
-                </div>
-                <div className="header__hamburger d-xl-block my-auto">
-                  <div
-                    className="sidebar__toggle"
-                    onClick={() => setSidebarToggle(true)}
-                  >
-                    <i className="far fa-bars" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <Sidebar
-        sidebarToggle={sidebarToggle}
-        close={() => setSidebarToggle(false)}
-        single={single}
-        menu={singleMenu}
-      />
-    </Fragment>
-  );
-};

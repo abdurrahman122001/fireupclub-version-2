@@ -1,3 +1,4 @@
+"use client"; 
 import Breadcrumb from "@/components/Breadcrumb";
 import Team from "@/components/Team";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
@@ -6,7 +7,7 @@ const page = () => {
   return (
     <NextLayout header={3} footer={3} single>
       {/*<< Breadcrumb Section Start >>*/}
-      <Breadcrumb />
+      <Breadcrumb pageName="Step-By-Step Guidance"/>
       {/* About Section Start */}
       <section className="about-section fix section-padding pb-80">
         <div className="container">
@@ -36,7 +37,7 @@ const page = () => {
               </div>
               <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                 <div className="about-image-3">
-                  <img src="assets/img/step-by-step.webp" alt="img" />
+                  <img src="assets/img/about/step-by-step.jpg" alt="img" />
                 </div>
               </div>
             </div>

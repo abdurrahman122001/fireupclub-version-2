@@ -1,3 +1,5 @@
+"use client"; 
+
 import Breadcrumb from "@/components/Breadcrumb";
 import Team from "@/components/Team";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
@@ -6,7 +8,7 @@ const page = () => {
   return (
     <NextLayout header={3} footer={3} single>
       {/*<< Breadcrumb Section Start >>*/}
-      <Breadcrumb />
+      <Breadcrumb pageName="Personalized Support"/>
       {/* About Section Start */}
       <section className="about-section fix section-padding pb-80">
         <div className="container">
@@ -50,7 +52,7 @@ const page = () => {
               </div>
               <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                 <div className="about-image-3">
-                  <img src="assets/img/financial-support.webp" alt="img" />
+                  <img src="assets/img/about/financial-support.jpg" alt="img" />
                 </div>
               </div>
             </div>
@@ -58,51 +60,6 @@ const page = () => {
         </div>
       </section>
       {/* About Section Start */}
-      {/* <section className="about-section fix section-padding pt-80">
-        <div className="container">
-          <div className="about-wrapper style-2">
-            <div className="row g-4 align-items-center">
-              <div className="col-lg-6 wow  fadeInUp" data-wow-delay=".3s">
-                <div className="about-image-3">
-                  <img src="assets/img/about/06.jpg" alt="img" />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="about-content">
-                  <h4 className="wow fadeInUp" data-wow-delay=".3s">
-                    Flexible Scaling &amp; Support
-                  </h4>
-                  <p className="mt-3 wow fadeInUp" data-wow-delay=".5s">
-                    In the early years, our dedicated team worked tirelessly to
-                    key Next milestones or achievements, such as product
-                    launches, partnerships or expansions these efforts laid the
-                    foundation
-                  </p>
-                  <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
-                    <div className="dot" />
-                    <div className="content">
-                      <h4>Flexible Scaling &amp; Support</h4>
-                      <p>
-                        Our attention to detail and quality is unmatched in the
-                        industry. <br /> We’re not just a resource provider but
-                        also a key
-                      </p>
-                    </div>
-                  </div>
-                  <Link
-                    href="about"
-                    className="theme-btn mt-50 wow fadeInUp"
-                    data-wow-delay=".5s"
-                  >
-                    Learn More Us
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
 
       {/* Testimonial Section Start */}

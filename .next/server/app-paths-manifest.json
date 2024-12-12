@@ -1,4 +1,9 @@
 {
+  "/financial-planning/page": "app/financial-planning/page.js",
+  "/global-investment/page": "app/global-investment/page.js",
+  "/immigration/page": "app/immigration/page.js",
+  "/content-creation/page": "app/content-creation/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/about-2/page": "app/about-2/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
