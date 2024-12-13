@@ -48,7 +48,7 @@ const teamMembers = [
   {
     name: "Umaima Ansari",
     role: "Amazon Kdp Expert",
-    image: "assets/img/team/06.webp",
+    image: "assets/img/team/06.jpg",
     socialLinks: {
     },
   },
