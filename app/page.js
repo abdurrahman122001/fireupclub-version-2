@@ -34,7 +34,7 @@ const page = () => {
           if (iframe) {
             const src = iframe.getAttribute('data-src');
             if (src && !iframe.src.includes('autoplay')) {
-              iframe.src = `${src}?autoplay=1&loop=1&muted=1`;
+              iframe.src = `${src}?autoplay=1&loop=1&muted=1&controls=0`;
               iframe.onload = () => setIsLoaded(true);
             }
           }
