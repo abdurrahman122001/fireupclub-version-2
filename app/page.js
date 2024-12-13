@@ -7,11 +7,12 @@ import { WorkingProcess2 } from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
 import Link from "next/link";
-import ReactModal from "react-modal";
+// import ReactModal from "react-modal";
 
 const page = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const videoRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -34,6 +35,7 @@ const page = () => {
             const src = iframe.getAttribute('data-src');
             if (src && !iframe.src.includes('autoplay')) {
               iframe.src = `${src}?autoplay=1&loop=1&muted=1`;
+              iframe.onload = () => setIsLoaded(true);
             }
           }
         }
@@ -516,33 +518,38 @@ const page = () => {
                     completing our brief questionnaire. If you’re a good fit,
                     we’ll extend a personal invitation to join us.
                   </p>
-                  <a href="Subscription"> <button
+                  <Link href="Subscription"> <button
                     className="theme-btn bg-2 get-started-btn"
                     onClick={openModal}
                   >
                     Get Started Now
-                  </button></a>
+                  </button></Link>
                 </div>
               </div>
               <div className="col-lg-6">
-              <div className="video-image">
-                <iframe
-                  ref={videoRef}
-                  data-src="https://player.vimeo.com/video/1024089228"
-                  title="Video"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen"
-                  allowFullScreen
-                  style={{
-                    border: 'none',
-                    // position: 'absolute',
-                    // top: 0,
-                    // left: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </div>
+                <div className="video-image">
+                {!isLoaded && (
+                  <div className="video-thumbnail">
+                    <img src="assets/img/video-thumbnail.PNG" alt="Video Thumbnail" />
+                  </div>
+                )}
+                  <iframe
+                    ref={videoRef}
+                    data-src="https://player.vimeo.com/video/1024089228"
+                    title="Video"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    style={{
+                      border: 'none',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  />
+                </div>
                 {/* <div className="video-image">
                   <img src="assets/img/video-thumbnail.PNG" alt="img" />
                   <div className="video-box">
@@ -560,7 +567,7 @@ const page = () => {
         </div>
 
         {/* Modal */}
-        {isModalOpen && (
+        {/* {isModalOpen && (
           <div className="modal-overlay">
             <div className="modal-content">
               <button className="close-modal" onClick={closeModal}>
@@ -577,7 +584,7 @@ const page = () => {
               />
             </div>
           </div>
-        )}
+        )} */}
 
         <style jsx>{`
           .modal-overlay {

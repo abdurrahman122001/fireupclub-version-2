@@ -1,6 +1,7 @@
 "use client";
 import { sliderProps } from "@/utility/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 export const TestimonialSlider1 = () => {
   return (
     <Swiper
