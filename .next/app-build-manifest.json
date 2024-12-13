@@ -21,18 +21,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
-    ],
-    "/Subscription/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Subscription/page.css",
-      "static/chunks/app/Subscription/page.js"
-    ],
-    "/personalized-support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/personalized-support/page.css",
-      "static/chunks/app/personalized-support/page.js"
     ]
   }
 }

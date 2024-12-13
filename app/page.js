@@ -528,7 +528,7 @@ const page = () => {
               <div className="video-image">
                 <iframe
                   ref={videoRef}
-                  data-src="https://player.vimeo.com/video/1024089228?autoplay=1&controls=0&muted=1"
+                  data-src="https://player.vimeo.com/video/1024089228"
                   title="Video"
                   frameBorder="0"
                   allow="autoplay; fullscreen"
