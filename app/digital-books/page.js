@@ -190,7 +190,7 @@ const page = () => {
                     data-wow-delay=".3s"
                   >
                     <div className="news-card-items">
-                    <Link href="about-2">
+                    <Link href="personalized-support">
                       <div
                         className="news-image bg-cover"
                         style={{ backgroundImage: 'url("assets/img/about/financial-support.jpg")' }}
@@ -199,12 +199,12 @@ const page = () => {
                       <div className="news-content">
                         {/* <p>November 25, 2024</p> */}
                         <h3 style={{ textAlign: 'center', color: 'black' }}>
-                          <Link href="about-1">
+                          <Link href="personalized-support">
                             Personalized Support
                           </Link>
                         </h3>
                         <center>
-                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-1">
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="personalized-support">
                             Read More
                             <i className="far fa-arrow-right" />
                           </Link>
@@ -217,7 +217,7 @@ const page = () => {
                     data-wow-delay=".5s"
                   >
                     <div className="news-card-items">
-                    <Link href="about-2">
+                    <Link href="step-by-step-guidance">
                       <div
                         className="news-image bg-cover"
                         style={{ backgroundImage: 'url("assets/img/about/step-by-step.jpg")' }}
@@ -226,12 +226,12 @@ const page = () => {
                       <div className="news-content">
                         {/* <p>November 25, 2024</p> */}
                         <h3 style={{ textAlign: 'center', color: 'black' }}>
-                          <Link href="about-2">
+                          <Link href="step-by-step-guidance">
                             Step-by-Step Guidance
                           </Link>
                         </h3>
                         <center>
-                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-2">
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="step-by-step-guidance">
                             Read More
                             <i className="far fa-arrow-right" />
                           </Link>
@@ -244,7 +244,7 @@ const page = () => {
                     data-wow-delay=".7s"
                   >
                     <div className="news-card-items">
-                    <Link href="about-3">
+                    <Link href="exclusive-access">
                       <div
                         className="news-image bg-cover"
                         style={{ backgroundImage: 'url("assets/img/about/exclusive-access.jpg")' }}
@@ -253,12 +253,12 @@ const page = () => {
                       <div className="news-content">
                         {/* <p>November 25, 2024</p> */}
                         <h3 style={{ textAlign: 'center', color: 'black' }}>
-                          <Link href="about-3">
+                          <Link href="exclusive-access">
                             Exclusive Access
                           </Link>
                         </h3>
                         <center>
-                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-3">
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="exclusive-access">
                             Read More
                             <i className="far fa-arrow-right" />
                           </Link>

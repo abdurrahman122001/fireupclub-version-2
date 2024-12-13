@@ -90,101 +90,101 @@ const page = () => {
               </div>
             </section>
             <section className="news-section section-padding" id="blog">
-        <div className="container">
-          <div className="section-title text-center">
-            <span className="sub-content wow fadeInUp">
-              <img src="assets/img/bale.png" alt="img" />
-              Your Gateway to Growth
-            </span>
-            <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              WHY JOIN FIRE UP CLUB
-            </h2>
-          </div>
-          <div className="row">
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <div className="news-card-items">
-              <Link href="about-2">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/about/financial-support.jpg")' }}
-                />
-                </Link>
-                <div className="news-content">
-                  {/* <p>November 25, 2024</p> */}
-                  <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-1">
-                      Personalized Support
-                    </Link>
-                  </h3>
-                  <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-1">
-                      Read More
-                      <i className="far fa-arrow-right" />
-                    </Link>
-                  </center>
+              <div className="container">
+                <div className="section-title text-center">
+                  <span className="sub-content wow fadeInUp">
+                    <img src="assets/img/bale.png" alt="img" />
+                    Your Gateway to Growth
+                  </span>
+                  <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                    WHY JOIN FIRE UP CLUB
+                  </h2>
+                </div>
+                <div className="row">
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div className="news-card-items">
+                    <Link href="personalized-support">
+                      <div
+                        className="news-image bg-cover"
+                        style={{ backgroundImage: 'url("assets/img/about/financial-support.jpg")' }}
+                      />
+                      </Link>
+                      <div className="news-content">
+                        {/* <p>November 25, 2024</p> */}
+                        <h3 style={{ textAlign: 'center', color: 'black' }}>
+                          <Link href="personalized-support">
+                            Personalized Support
+                          </Link>
+                        </h3>
+                        <center>
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="personalized-support">
+                            Read More
+                            <i className="far fa-arrow-right" />
+                          </Link>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                    data-wow-delay=".5s"
+                  >
+                    <div className="news-card-items">
+                    <Link href="step-by-step-guidance">
+                      <div
+                        className="news-image bg-cover"
+                        style={{ backgroundImage: 'url("assets/img/about/step-by-step.jpg")' }}
+                      />
+                      </Link>
+                      <div className="news-content">
+                        {/* <p>November 25, 2024</p> */}
+                        <h3 style={{ textAlign: 'center', color: 'black' }}>
+                          <Link href="step-by-step-guidance">
+                            Step-by-Step Guidance
+                          </Link>
+                        </h3>
+                        <center>
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="step-by-step-guidance">
+                            Read More
+                            <i className="far fa-arrow-right" />
+                          </Link>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                    data-wow-delay=".7s"
+                  >
+                    <div className="news-card-items">
+                    <Link href="exclusive-access">
+                      <div
+                        className="news-image bg-cover"
+                        style={{ backgroundImage: 'url("assets/img/about/exclusive-access.jpg")' }}
+                      />
+                      </Link>
+                      <div className="news-content">
+                        {/* <p>November 25, 2024</p> */}
+                        <h3 style={{ textAlign: 'center', color: 'black' }}>
+                          <Link href="exclusive-access">
+                            Exclusive Access
+                          </Link>
+                        </h3>
+                        <center>
+                          <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="exclusive-access">
+                            Read More
+                            <i className="far fa-arrow-right" />
+                          </Link>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              <div className="news-card-items">
-              <Link href="about-2">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/about/step-by-step.jpg")' }}
-                />
-                </Link>
-                <div className="news-content">
-                  {/* <p>November 25, 2024</p> */}
-                  <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-2">
-                      Step-by-Step Guidance
-                    </Link>
-                  </h3>
-                  <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-2">
-                      Read More
-                      <i className="far fa-arrow-right" />
-                    </Link>
-                  </center>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              <div className="news-card-items">
-              <Link href="about-3">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/about/exclusive-access.jpg")' }}
-                />
-                </Link>
-                <div className="news-content">
-                  {/* <p>November 25, 2024</p> */}
-                  <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-3">
-                      Exclusive Access
-                    </Link>
-                  </h3>
-                  <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-3">
-                      Read More
-                      <i className="far fa-arrow-right" />
-                    </Link>
-                  </center>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
     </NextLayout>
   );
 };
