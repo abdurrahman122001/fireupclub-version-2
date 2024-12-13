@@ -31,7 +31,7 @@ export const sliderProps = {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 12000,
+      delay: 16000,
       disableOnInteraction: false,
     },
     pagination: {
