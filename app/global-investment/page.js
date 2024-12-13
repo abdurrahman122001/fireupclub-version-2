@@ -47,7 +47,7 @@ const page = () => {
                           className="about-button mt-5 wow fadeInUp"
                           data-wow-delay=".5s"
                         >
-                          <Link href="Subscribe" className="theme-btn">
+                          <Link href="Subscription" className="theme-btn">
                             Subscribe Now
                             <i className="far fa-arrow-right" />
                           </Link>

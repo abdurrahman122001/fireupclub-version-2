@@ -632,9 +632,9 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="fal fa-map-marker-alt" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                         Detroit, Michigan, United States
-                      </a>
+                      <p>
+                      162 Roundhay Rd, Harehills, Leeds LS8 5PL, United Kingdom
+                      </p>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -642,7 +642,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">info@fireupclub.com</a>
+                      <a href="mailto:info@fireupclub.com">info@fireupclub.com</a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -670,16 +670,13 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                   </Link>
                 </div>
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/people/FU-Club/61567838861680/">
                     <i className="fab fa-facebook-f" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
+                  <a href="https://www.instagram.com/fireupclub12/">
+                    <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/fireupclub/">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
@@ -726,7 +723,7 @@ const Header2 = ({ single }) => {
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button">
                   <Link href="Subscription" className="theme-btn bg-2">
-                    Get A Quote
+                    Apply Now
                   </Link>
                 </div>
                 <div className="header__hamburger d-xl-none my-auto">

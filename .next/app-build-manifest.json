@@ -22,79 +22,17 @@
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/about-2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-2/page.css",
-      "static/chunks/app/about-2/page.js"
-    ],
-    "/about-1/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-1/page.css",
-      "static/chunks/app/about-1/page.js"
-    ],
-    "/about-3/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-3/page.css",
-      "static/chunks/app/about-3/page.js"
-    ],
-    "/project-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/project-details/page.js"
-    ],
-    "/service-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/service-details/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
-    ],
     "/Subscription/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/Subscription/page.css",
       "static/chunks/app/Subscription/page.js"
     ],
-    "/financial-planning/page": [
+    "/personalized-support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/financial-planning/page.js"
-    ],
-    "/content-creation/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/content-creation/page.js"
-    ],
-    "/crypto-trading/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/crypto-trading/page.js"
-    ],
-    "/immigration/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/immigration/page.js"
-    ],
-    "/digital-books/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/digital-books/page.js"
-    ],
-    "/ecommerce/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ecommerce/page.js"
-    ],
-    "/global-investment/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/global-investment/page.js"
+      "static/css/app/personalized-support/page.css",
+      "static/chunks/app/personalized-support/page.js"
     ]
   }
 }

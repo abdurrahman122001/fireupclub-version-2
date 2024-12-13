@@ -2,7 +2,7 @@
 import Counter from "@/components/Counter";
 import GrowBusiness from "@/components/GrowBusiness";
 import Team from "@/components/Team";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { WorkingProcess2 } from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
@@ -11,6 +11,7 @@ import ReactModal from "react-modal";
 
 const page = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const videoRef = useRef(null);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -25,9 +26,30 @@ const page = () => {
   };
 
   useEffect(() => {
-    // Cleanup: Ensure body overflow is reset if the component unmounts
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const iframe = videoRef.current;
+          if (iframe) {
+            const src = iframe.getAttribute('data-src');
+            if (src && !iframe.src.includes('autoplay')) {
+              iframe.src = `${src}?autoplay=1&loop=1&muted=1`;
+            }
+          }
+        }
+      },
+      {
+        root: null, // viewport
+        threshold: 0.5, // Trigger when 50% of the video is in view
+      }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
     return () => {
       document.body.style.overflow = "";
+      if (videoRef.current) observer.unobserve(videoRef.current);
     };
   }, []);
   return (
@@ -93,7 +115,7 @@ const page = () => {
               data-wow-delay=".3s"
             >
               <div className="news-card-items">
-              <Link href="about-2">
+              <Link href="personalized-support">
                 <div
                   className="news-image bg-cover"
                   style={{ backgroundImage: 'url("assets/img/about/financial-support.jpg")' }}
@@ -102,12 +124,12 @@ const page = () => {
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-1">
+                    <Link href="personalized-support">
                       Personalized Support
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-1">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="personalized-support">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -120,7 +142,7 @@ const page = () => {
               data-wow-delay=".5s"
             >
               <div className="news-card-items">
-              <Link href="about-2">
+              <Link href="step-by-step-guidance">
                 <div
                   className="news-image bg-cover"
                   style={{ backgroundImage: 'url("assets/img/about/step-by-step.jpg")' }}
@@ -129,12 +151,12 @@ const page = () => {
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-2">
+                    <Link href="step-by-step-guidance">
                       Step-by-Step Guidance
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-2">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="step-by-step-guidance">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -147,7 +169,7 @@ const page = () => {
               data-wow-delay=".7s"
             >
               <div className="news-card-items">
-              <Link href="about-3">
+              <Link href="exclusive-access">
                 <div
                   className="news-image bg-cover"
                   style={{ backgroundImage: 'url("assets/img/about/exclusive-access.jpg")' }}
@@ -156,12 +178,12 @@ const page = () => {
                 <div className="news-content">
                   {/* <p>November 25, 2024</p> */}
                   <h3 style={{ textAlign: 'center', color: 'black' }}>
-                    <Link href="about-3">
+                    <Link href="exclusive-access">
                       Exclusive Access
                     </Link>
                   </h3>
                   <center>
-                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="about-3">
+                    <Link style={{ fontFamily: '12px' }} className="link-btn mt-2" href="exclusive-access">
                       Read More
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -231,7 +253,7 @@ const page = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-offer-items">
                 <div className="icon">
-                  <img src="assets/img/service/icon/technology.png" alt="img" />
+                  <img src="assets/img/service/icon/ecommerce.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
@@ -274,7 +296,7 @@ const page = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-offer-items">
                 <div className="icon">
-                  <img src="assets/img/service/icon/technology.png" alt="img" />
+                  <img src="assets/img/service/icon/digital-books.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
@@ -294,7 +316,7 @@ const page = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-offer-items">
                 <div className="icon">
-                  <img src="assets/img/service/icon/technology.png" alt="img" />
+                  <img src="assets/img/service/icon/immigration.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
@@ -315,7 +337,7 @@ const page = () => {
               <div className="service-offer-items">
                 <div className="icon">
                   <img
-                    src="assets/img/service/icon/brainstorming.png"
+                    src="assets/img/service/icon/content-creation.png"
                     alt="img"
                   />
                 </div>
@@ -339,7 +361,7 @@ const page = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-offer-items">
                 <div className="icon">
-                  <img src="assets/img/service/icon/technology.png" alt="img" />
+                  <img src="assets/img/service/icon/tax-planning.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
@@ -464,7 +486,7 @@ const page = () => {
                               {" "}
                               <Counter end={2} />
                             </span>
-                            K
+                            K+
                           </h2>
                           <p>Subscribers</p>
                         </div>
@@ -503,7 +525,25 @@ const page = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="video-image">
+              <div className="video-image">
+                <iframe
+                  ref={videoRef}
+                  data-src="https://player.vimeo.com/video/1024089228?autoplay=1&controls=0&muted=1"
+                  title="Video"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                  style={{
+                    border: 'none',
+                    // position: 'absolute',
+                    // top: 0,
+                    // left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />
+              </div>
+                {/* <div className="video-image">
                   <img src="assets/img/video-thumbnail.PNG" alt="img" />
                   <div className="video-box">
                     <button
@@ -513,7 +553,7 @@ const page = () => {
                       <i className="fas fa-play" />
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -552,6 +592,17 @@ const page = () => {
             align-items: center;
             z-index: 999;
           }
+        .video-image {
+          position: relative;
+          width: 100%;
+          height: 400px;
+          
+          background-size: cover;
+          overflow: hidden;
+        }
+        iframe {
+          display: block;
+        }
 
           .modal-content {
             position: relative;

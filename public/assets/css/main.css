@@ -3792,7 +3792,7 @@ input.main-search-input::placeholder {
   }
 }
 .business-boost-wrapper .video-image {
-  margin-top: -120px;
+  /* margin-top: -120px; */
   position: relative;
   z-index: 9;
 }
@@ -5137,6 +5137,7 @@ input.main-search-input::placeholder {
   padding: 25px 40px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  min-height: 162px;
 }
 @media (max-width: 767px) {
   .about-wrapper-2 .about-counter-area .about-counter-items {
@@ -6245,9 +6246,7 @@ input.main-search-input::placeholder {
 .team-bg {
   background: var(--header);
 }
-.team-section{
-  margin-bottom: 20px;
-}
+
 .footer-bg {
   background: var(--bg);
 }

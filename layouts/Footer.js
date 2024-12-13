@@ -122,7 +122,7 @@ const Footer1 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:info@example.com" className="link">
+                      <a href="mailto:info@fireupclub.com" className="link">
                         info@fireupclub.com
                       </a>
                     </div>
@@ -476,7 +476,7 @@ const Footer3 = () => {
                     </div>
                     <div className="content">
                       <p>
-                         Detroit, Michigan, United States
+                      162 Roundhay Rd, Harehills, Leeds LS8 5PL, United Kingdom
                       </p>
                     </div>
                   </div>
