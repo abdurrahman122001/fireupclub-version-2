@@ -16,7 +16,7 @@ const Subscriptions = () => {
     const fetchSubscriptions = async () => {
         setLoading(true);
         try {
-            const response = await axios.get("https://innand.com/api/subscriptions");
+            const response = await axios.get("https://fireupclub.com/api/subscriptions");
             setSubscriptions(response.data);
         } catch (error) {
             console.error("Error fetching subscriptions:", error);
@@ -27,7 +27,7 @@ const Subscriptions = () => {
 
     const deleteSubscription = async (id) => {
         try {
-            await axios.delete(`https://innand.com/api/subscriptions/${id}`);
+            await axios.delete(`https://fireupclub.com/api/subscriptions/${id}`);
             alert("Subscription deleted successfully!");
             fetchSubscriptions(); // Refresh the list
         } catch (error) {
@@ -37,7 +37,7 @@ const Subscriptions = () => {
 
     const approveSubscription = async (id) => {
         try {
-            await axios.post(`https://innand.com/api/subscriptions/approve/${id}`);
+            await axios.post(`https://fireupclub.com/api/subscriptions/approve/${id}`);
             alert("Approval email sent successfully!");
         } catch (error) {
             console.error("Error approving subscription:", error);

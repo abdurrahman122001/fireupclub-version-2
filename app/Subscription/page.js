@@ -50,7 +50,7 @@ const MultiStepForm = () => {
 const fetchGoalsByCategory = async (categoryValue) => {
   setLoadingGoals(true);
   try {
-    const response = await axios.get(`https://innand.com/api/goals-by-category`, {
+    const response = await axios.get(`https://fireupclub.com/api/goals-by-category`, {
       params: { category_value: categoryValue },
     });
     setFilteredGoals(response.data.goals.map((goal) => ({
@@ -66,7 +66,7 @@ const fetchGoalsByCategory = async (categoryValue) => {
 useEffect(() => {
   const fetchIndustries = async () => {
     try {
-      const response = await axios.get("https://innand.com/api/industries");
+      const response = await axios.get("https://fireupclub.com/api/industries");
       const formattedIndustries = response.data.map(industry => ({
         value: industry.value,
         label: industry.name
@@ -80,7 +80,7 @@ useEffect(() => {
 
   const fetchFinancialGoals = async () => {
     try {
-      const response = await axios.get("https://innand.com/api/financialGoals");
+      const response = await axios.get("https://fireupclub.com/api/financialGoals");
       setGoalCategories(response.data.goalCategories.map((category) => ({
         value: category.category_value,
         label: category.category,
@@ -128,7 +128,7 @@ useEffect(() => {
             data.skills = data.skills.join(',');
         }
 
-        const response = await axios.post("https://innand.com/api/subscription", data);
+        const response = await axios.post("https://fireupclub.com/api/subscription", data);
 
         setTimeout(() => {
             setLoading(false);

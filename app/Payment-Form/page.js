@@ -33,7 +33,7 @@ const PaymentForm = () => {
   useEffect(() => {
     const fetchPlans = async () => {
       try {
-        const response = await axios.get("https://innand.com/api/get-payment-plan");
+        const response = await axios.get("https://fireupclub.com/api/get-payment-plan");
         console.log(response.data); // Adjust as necessary
       } catch (error) {
         console.error("Error fetching payment plans:", error);
@@ -54,7 +54,7 @@ const PaymentForm = () => {
       };
 
       // Save data and get Stripe URL
-      const response = await axios.post("https://innand.com/api/save-data-and-redirect", formData);
+      const response = await axios.post("https://fireupclub.com/api/save-data-and-redirect", formData);
 
       if (response.data.url) {
         // Redirect to Stripe Checkout
