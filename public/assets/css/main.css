@@ -8504,7 +8504,7 @@ input.main-search-input::placeholder {
 }
 .news-card-items .news-image {
   height: 270px;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .news-card-items .news-content {
   margin-top: 30px;
