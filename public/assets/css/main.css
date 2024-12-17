@@ -8501,13 +8501,18 @@ input.main-search-input::placeholder {
 
 .news-card-items {
   margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px #cccccc42;
+    border-radius: 16px;
+
 }
 .news-card-items .news-image {
   height: 270px;
   border-radius: 16px;
 }
 .news-card-items .news-content {
-  margin-top: 30px;
+  padding: 40px;
+  /* box-shadow: 0px 0px 3px 1px #cccccc33; */
 }
 @media (max-width: 575px) {
   .news-card-items .news-content {
