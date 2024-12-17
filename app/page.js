@@ -94,7 +94,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="news-section section-padding" id="blog">
+      <section className="news-section section-padding pt-0" id="blog">
         <div className="container">
           <div className="section-title text-center">
             <span className="sub-content wow fadeInUp">
