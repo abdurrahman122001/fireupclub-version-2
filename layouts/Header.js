@@ -665,6 +665,7 @@ const Header2 = ({ single }) => {
   const singleMenu = [
     { id: 1, href: "about", title: "About" },
     { id: 2, href: "services", title: "Services" },
+    { id: 4, href: "team", title: "Team" },
     { id: 3, href: "clients", title: "Success Stories" },
   ];
 
@@ -722,6 +723,7 @@ const Header3 = ({ single }) => {
   const singleMenu = [
     { id: 1, href: "about", title: "About" },
     { id: 2, href: "services", title: "Services" },
+    { id: 4, href: "team", title: "Team" },
     { id: 3, href: "clients", title: "Success Stories" },
   ];
   return (
