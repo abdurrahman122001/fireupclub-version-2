@@ -197,6 +197,37 @@ export const TestimonialSlider2 = ({ style = "style-1" }) => {
             </div>
           </div>
         </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="testimonial-card-items">
+            <div className="testimonial-image">
+              <img src="assets/img/t2.jpg" alt="img" />
+            </div>
+            <div className="testimonial-content">
+              <div className="author-image">
+                <img src="assets/img/t2.jpg" alt="author-img" />
+                <div className="content">
+                  <h5>
+                  Mustafa
+                  {/* <span>/ Developer</span> */}
+                  </h5>
+                </div>
+              </div>
+              <p style={{fontSize: '17px'}}>
+              Mustafa, a 35-year-old engineer, felt overwhelmed by the idea of securing his financial future. 
+              After working with Fire Up Club, he learned how strategic real estate investments could provide 
+              him with a steady passive income. With our expert support, Mustafa built a property portfolio that 
+              grew his wealth significantly, and he's now set to retire in under 10 years, living off his rental income.
+              </p>
+              <div className="star">
+                <i className="fas fa-star" />
+                <i className="fas fa-star" />
+                <i className="fas fa-star" />
+                <i className="fas fa-star" />
+                <i className="fas fa-star" />
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </div>
       <div className="swiper-dot pb-5 text-center">
         <div className="dot" />

@@ -2870,7 +2870,7 @@ input.main-search-input::placeholder {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  margin-top: 45px;
+  margin-top: 65px;
 }
 @media (max-width: 767px) {
   .hero-3 .hero-content .hero-button {
@@ -4369,6 +4369,7 @@ input.main-search-input::placeholder {
 .about-wrapper .about-image-items {
   position: relative;
 }
+.about-wrapper
 .about-wrapper .about-image-items .experience-text {
   background-color: var(--theme);
   display: -webkit-box;
@@ -4437,6 +4438,9 @@ input.main-search-input::placeholder {
 .about-wrapper .about-content {
   margin-left: 60px;
 }
+.about-wrapper .about-content p{
+  text-align: justify;
+}
 @media (max-width: 1399px) {
   .about-wrapper .about-content {
     margin-left: 15px;
@@ -4454,6 +4458,7 @@ input.main-search-input::placeholder {
 }
 .about-wrapper .about-content .about-list {
   margin-top: 40px;
+  text-align: justify;
 }
 @media (max-width: 767px) {
   .about-wrapper .about-content .about-list {
@@ -8499,6 +8504,7 @@ input.main-search-input::placeholder {
 }
 .news-card-items .news-image {
   height: 270px;
+  border-radius: 12px;
 }
 .news-card-items .news-content {
   margin-top: 30px;

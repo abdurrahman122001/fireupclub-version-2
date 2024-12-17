@@ -3,14 +3,12 @@ import Counter from "@/components/Counter";
 import GrowBusiness from "@/components/GrowBusiness";
 import Team from "@/components/Team";
 import { useState, useEffect, useRef } from "react";
-import { WorkingProcess2 } from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
 import Link from "next/link";
 // import ReactModal from "react-modal";
 
 const page = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const videoRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -55,7 +53,7 @@ const page = () => {
     };
   }, []);
   return (
-    <NextLayout header={2} footer={3} single>
+    <NextLayout header={2     } footer={3} single>
       {/* Hero Section Start */}
       <section className="hero-section hero-3">
         <div className="bottom-shape">
@@ -73,11 +71,7 @@ const page = () => {
                   Our Goal is To<br /> See You
                   <span> Succeed</span>
                 </h1>
-                <p className="wow fadeInUp" data-wow-delay=".6s">
-                  Isn't It a Time To Start Making Your Dream a Reality
-                  <br />
-                  Take That First Step Towards a Life
-                </p>
+
                 <div className="hero-button ">
                   <Link
                     href="Subscription"
@@ -196,7 +190,109 @@ const page = () => {
           </div>
         </div>
       </section>
+      {/* About Section Start */}
+      <section className="about-section-3 section-padding pt-0" id="about">
+        <div className="container">
+          <div className="about-wrapper-2">
+            <div className="row g-4">
+              <div className="col-lg-6">
+                <div className="about-image-items">
+                  <div
+                    className="about-image-1 wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <img src="assets/img/about/03.jpg" alt="img" />
+                    <div className="about-image-2">
+                      <img src="assets/img/about/04.jpg" alt="img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="about-content">
+                  <div className="section-title">
+                    <span className="sub-content wow fadeInUp">
+                      <img src="assets/img/bale.png" alt="img" />
+                      About Company
+                    </span>
+                    <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                      The life You’ve Always Dreamed of isn’t as Far Away as it Seems
+                    </h2>
+                  </div>
+                  <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                    We are more than advisors, we're freedom builders. Join Fire Up Club's expert community for a path to early retirement.
+                  </p>
+                  <div className="about-counter-area">
+                    <div className="row g-4">
+                      <div
+                        className="col-md-6 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".3s"
+                      >
+                        <div className="about-counter-items">
+                          <h2>
+                            <span className="count">
+                              {" "}
+                              <Counter end={90} />
+                            </span>
+                            %
+                          </h2>
+                          <p>Personalized Plans Success</p>
+                        </div>
+                      </div>
+                      <div
+                        className="col-md-6 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".5s"
+                      >
+                        <div className="about-counter-items">
+                          <h2>
+                            <span className="count">
+                              <Counter end={80} />
+                            </span>
+                            %
+                          </h2>
+                          <p>Financial Independence Achieved
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        className="col-md-6 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".3s"
+                      >
+                        <div className="about-counter-items">
+                          <h2>
+                            <span className="count">
+                              {" "}
+                              <Counter end={95} />
+                            </span>
+                            %
+                          </h2>
+                          <p>Community Support Satisfaction</p>
+                        </div>
+                      </div>
+                      <div
+                        className="col-md-6 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".5s"
+                      >
+                        <div className="about-counter-items">
+                          <h2>
+                            <span className="count">
+                              {" "}
+                              <Counter end={2} />
+                            </span>
+                            K+
+                          </h2>
+                          <p>Subscribers</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Service Offer Section Start */}
       <section className="service-offer-section" id="services">
         <div className="container">
@@ -385,123 +481,6 @@ const page = () => {
           </div>
         </div>
       </section>
-      {/* About Section Start */}
-      <section className="about-section-3 section-padding pt-0" id="about">
-        <div className="container">
-          <div className="about-wrapper-2">
-            <div className="row g-4">
-              <div className="col-lg-6">
-                <div className="about-image-items">
-                  <div
-                    className="about-image-1 wow fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <img src="assets/img/about/03.jpg" alt="img" />
-                    <div className="about-image-2">
-                      <img src="assets/img/about/04.jpg" alt="img" />
-                    </div>
-                  </div>
-                  <div
-                    className="experience-items float-bob-x wow fadeInLeft"
-                    data-wow-delay=".5s"
-                  >
-                    <h6>
-                      Trusted by 1M+ people <br />
-                      around the globe
-                    </h6>
-                    <img src="assets/img/about/face-mans.png" alt="img" />
-                    <h2>
-                      <span className="count">25</span>+
-                    </h2>
-                    <p>Years Of Experience</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="about-content">
-                  <div className="section-title">
-                    <span className="sub-content wow fadeInUp">
-                      <img src="assets/img/bale.png" alt="img" />
-                      About Company
-                    </span>
-                    <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      The life You’ve Always Dreamed of isn’t as Far Away as it Seems
-                    </h2>
-                  </div>
-                  <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                    We are more than advisors, we're freedom builders. Join Fire Up Club's expert community for a path to early retirement.
-                  </p>
-                  <div className="about-counter-area">
-                    <div className="row g-4">
-                      <div
-                        className="col-md-6 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".3s"
-                      >
-                        <div className="about-counter-items">
-                          <h2>
-                            <span className="count">
-                              {" "}
-                              <Counter end={90} />
-                            </span>
-                            %
-                          </h2>
-                          <p>Personalized Plans Success</p>
-                        </div>
-                      </div>
-                      <div
-                        className="col-md-6 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".5s"
-                      >
-                        <div className="about-counter-items">
-                          <h2>
-                            <span className="count">
-                              <Counter end={80} />
-                            </span>
-                            %
-                          </h2>
-                          <p>Financial Independence Achieved
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        className="col-md-6 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".3s"
-                      >
-                        <div className="about-counter-items">
-                          <h2>
-                            <span className="count">
-                              {" "}
-                              <Counter end={95} />
-                            </span>
-                            %
-                          </h2>
-                          <p>Community Support Satisfaction</p>
-                        </div>
-                      </div>
-                      <div
-                        className="col-md-6 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".5s"
-                      >
-                        <div className="about-counter-items">
-                          <h2>
-                            <span className="count">
-                              {" "}
-                              <Counter end={2} />
-                            </span>
-                            K+
-                          </h2>
-                          <p>Subscribers</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Team Section Start */}
       <Team />
       {/* Business Boost Section Start */}
@@ -646,9 +625,6 @@ const page = () => {
       <GrowBusiness />
       {/* Working Process Section Start */}
 
-      {/* <Contact /> */}
-
-      <WorkingProcess2 />
 
       <section className="testimonial-section-5 fix section-padding fix pt-0" id="clients">
         <div className="container">

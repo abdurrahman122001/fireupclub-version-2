@@ -19,7 +19,7 @@ const page = () => {
                             Our Services
                           </span>
                           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                          Online Business (E-Commerce)
+                          Online Business<br/> (E-Commerce)
                           </h2>
                         </div>
                         <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
