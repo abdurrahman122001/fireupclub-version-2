@@ -16450,6 +16450,7 @@ input.main-search-input::placeholder {
   bottom: -70%;
   left: 0;
   width: 100%;
+  z-index: -10;
 }
 @media (max-width: 1899px) {
   .hero-3 .bottom-shape {

@@ -21,6 +21,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
+    ],
+    "/personalized-support/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/personalized-support/page.css",
+      "static/chunks/app/personalized-support/page.js"
     ]
   }
 }
