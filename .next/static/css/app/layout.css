@@ -20701,7 +20701,6 @@ input.main-search-input::placeholder {
   margin-bottom: 50px;
   border-radius: 16px;
   min-height: 380px;
-  height: 380px;
 }
 @media (max-width: 1600px) {
   .testimonial-card-items {
