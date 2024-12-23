@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Saqib Z Siddiqui",
     role: "Technical Analyst",
     image: "assets/img/team/02.webp",
-    url: "saqib-siddiqui",
+    url: "/saqib-siddiqui",
     socialLinks: {
 
     },
@@ -38,7 +38,7 @@ const teamMembers = [
     name: "Nafees Mazhar",
     role: "Content Creator & Youtuber",
     image: "assets/img/team/04.webp",
-    url: "nafees-mazhar",
+    url: "/nafees-mazhar",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/nafees-mazhar-youtuber/",
     },
@@ -47,7 +47,7 @@ const teamMembers = [
     name: "Farid Aliani – CFA",
     role: "Portfolio Management Expert",
     image: "assets/img/team/05.webp",
-    url: "farid-aliani",
+    url: "/farid-aliani",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/faridaliani/",
     },
@@ -56,7 +56,7 @@ const teamMembers = [
     name: "Umaima Ansari",
     role: "Amazon Kdp Expert",
     image: "assets/img/team/06.jpg",
-    url: "umaima-ansari",
+    url: "/umaima-ansari",
     socialLinks: {
     },
   },
@@ -64,7 +64,7 @@ const teamMembers = [
     name: "Rehan Kazmi – FCA",
     role: "Tax Consultant",
     image: "assets/img/team/07.webp",
-    url: "rehan-kazmi",
+    url: "/rehan-kazmi",
     socialLinks: {
 
       linkedin: "https://www.linkedin.com/in/syed-rehan-kazmi-fca-icap-aca-icaew-b9b99825/",
@@ -87,20 +87,25 @@ const teamMembers = [
         <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-4">
               <div className="team-card-items">
-              <Link href="nabeel-shaikh">
                 <div className="team-image">
-                  <img src="assets/img/team/01.webp" alt="Nabeel Shaikh – FCA" style={{ height: "335px", width: "100%", objectFit: "cover" }}/>
-                  <div className="icon-list">
-                    <ul>
-                      <li>
-                        <a href="https://www.linkedin.com/in/nabeilschaik/">
-                          <i className="fab fa-linkedin-in" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <Link href="/nabeel-shaikh">
+                    <img src="assets/img/team/01.webp" alt="Nabeel Shaikh – FCA" style={{ height: "335px", width: "100%", objectFit: "cover" }}/>
+                  </Link>
+                    <div className="icon-list">
+                      <ul>
+                        <li>
+                          <a href="https://www.linkedin.com/in/nabeilschaik/"
+                          onClick={(e) => e.stopPropagation()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >
+                            <i className="fab fa-linkedin-in" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  
                 </div>
-              </Link>
                 <div className="team-content">
                   <h4>
                   <Link href="nabeel-shaikh"> Nabeel Shaikh – FCA </Link>
@@ -136,20 +141,25 @@ const teamMembers = [
               {teamMembers.map((member, index) => (
                 <SwiperSlide key={index}>
                   <div className="team-card-items">
-                    <Link href = {member.url}>
                       <div className="team-image">
+                        <Link href = {member.url}>
                         <img src={member.image} alt={`${member.name}`} style={{ height: "335px", width: "100%", objectFit: "cover" }}/>
+                        </Link>
                         <div className="icon-list">
                           <ul>
                             <li>
-                              <a href={member.socialLinks.linkedin}>
+                              <a href={member.socialLinks.linkedin}
+                              onClick={(e) => e.stopPropagation()}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >
                                 <i className="fab fa-linkedin-in" />
                               </a>
                             </li>
                           </ul>
                         </div>
                       </div>
-                    </Link>
+                    
                     <div className="team-content">
                       <h4>
                         <Link href={member.url}>{member.name}</Link>

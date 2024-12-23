@@ -1,7 +1,4 @@
 {
-  "/page": "app/page.js",
   "/nafees-mazhar/page": "app/nafees-mazhar/page.js",
-  "/saqib-siddiqui/page": "app/saqib-siddiqui/page.js",
-  "/imran-kalim/page": "app/imran-kalim/page.js",
-  "/umaima-ansari/page": "app/umaima-ansari/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
