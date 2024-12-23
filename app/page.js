@@ -6,23 +6,12 @@ import { useState, useEffect, useRef } from "react";
 import NextLayout from "@/layouts/NextLayout";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
 import Link from "next/link";
-// import ReactModal from "react-modal";
+
 
 const page = () => {
   const videoRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-    // Lock the scroll
-    document.body.style.overflow = "hidden";
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    // Unlock the scroll
-    document.body.style.overflow = "";
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,7 +42,7 @@ const page = () => {
     };
   }, []);
   return (
-    <NextLayout header={2     } footer={3} single>
+    <NextLayout header={2} footer={3} single>
       {/* Hero Section Start */}
       <section className="hero-section hero-3">
         <div className="bottom-shape">
@@ -483,6 +472,7 @@ const page = () => {
       </section>
       {/* Team Section Start */}
       <Team />
+      
       {/* Business Boost Section Start */}
       <section className="business-boost-section section-padding pt-0">
         <div className="container">
@@ -499,7 +489,6 @@ const page = () => {
                   </p>
                   <Link href="Subscription"> <button
                     className="theme-btn bg-2 get-started-btn"
-                    onClick={openModal}
                   >
                     Get Started Now
                   </button></Link>
@@ -529,41 +518,13 @@ const page = () => {
                     }}
                   />
                 </div>
-                {/* <div className="video-image">
-                  <img src="assets/img/video-thumbnail.PNG" alt="img" />
-                  <div className="video-box">
-                    <button
-                      className="video-buttton ripple"
-                      onClick={openModal}
-                    >
-                      <i className="fas fa-play" />
-                    </button>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
 
         {/* Modal */}
-        {/* {isModalOpen && (
-          <div className="modal-overlay">
-            <div className="modal-content">
-              <button className="close-modal" onClick={closeModal}>
-                &times;
-              </button>
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://player.vimeo.com/video/1024089228?autoplay=1&controls=0&muted=1&loop=1"
-                title="Video"
-                frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        )} */}
+
 
         <style jsx>{`
           .modal-overlay {

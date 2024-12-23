@@ -1,6 +1,7 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/personalized-support/page": "app/personalized-support/page.js"
+  "/nafees-mazhar/page": "app/nafees-mazhar/page.js",
+  "/saqib-siddiqui/page": "app/saqib-siddiqui/page.js",
+  "/imran-kalim/page": "app/imran-kalim/page.js",
+  "/umaima-ansari/page": "app/umaima-ansari/page.js"
 }

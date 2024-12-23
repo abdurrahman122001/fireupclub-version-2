@@ -3,57 +3,35 @@ import NextLayout from "@/layouts/NextLayout";
 
 const page = () => {
   return (
-    <NextLayout>
-      <Breadcrumb pageName="Team Details" />
+    <NextLayout header={3} footer={3} single>
+      <Breadcrumb pageName="Team Member" />
       {/* Team Details Start */}
       <section className="team-details section-padding fix">
         <div className="container">
           <div className="team-details-wrapper">
             <div className="team-details-image-area">
               <div className="row g-4">
-                <div className="col-lg-2">
-                  <h2 className="text">Next</h2>
+                <div className="col-lg-1">
+                  {/* <h2 className="text">Next</h2> */}
                 </div>
                 <div className="col-lg-4">
                   <div
                     className="details-iamge bg-cover"
                     style={{
-                      backgroundImage: 'url("assets/img/team/details.jpg")',
+                      backgroundImage: 'url("assets/img/team/01.webp")',
                     }}
                   />
                 </div>
                 <div className="col-lg-1" />
-                <div className="col-lg-4">
+                <div className="col-lg-6">
                   <div className="right-content">
-                    <h2>Robert Broom</h2>
-                    <p>Backend Developer</p>
+                    <h2>Nabeel Shaikh (aka Nabeil Schaik) FCA, MSc, CME, Fintech (Certified) </h2>
+                    <p>Startup Mentor | Wealth Strategist | Immigration Advisor | Visionary Leader</p>
                     <div className="list">
-                      <h5 className="mb-3">
-                        Department: <span>Web Design</span>
-                      </h5>
-                      <h5 className="mb-3">
-                        Experience: <span>15 Years</span>
-                      </h5>
-                      <h5 className="mb-3">
-                        Email:{" "}
-                        <a href="mailto:info@example.com">info@example.com</a>
-                      </h5>
-                      <h5>
-                        Phone:{" "}
-                        <a href="tel:+19009384957435">+1-900-938-4957-43</a>
-                      </h5>
+                    Nabeel Shaikh is a dynamic Chartered Accountant, Investment Banker, and Entrepreneur dedicated to empowering individuals to achieve Financial Independence and Early Retirement (FIRE). As the founder of Fire Up Club.com, he has built a thriving community that helps members design their lives around financial freedom and intentional living. Nabeel’s philosophy revolves around blending technical expertise with practical, personalized mentorship to make financial independence accessible to everyone.
                     </div>
                     <div className="social-icon d-flex align-items-center">
-                      <a href="#" className="color-1">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                      <a href="#" className="color-2">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#" className="color-3">
-                        <i className="fab fa-youtube" />
-                      </a>
-                      <a href="#" className="color-4">
+                      <a href="https://www.linkedin.com/in/nabeilschaik/" className="color-4">
                         <i className="fab fa-linkedin-in" />
                       </a>
                     </div>
@@ -62,26 +40,40 @@ const page = () => {
               </div>
             </div>
             <div className="team-details-content section-padding pb-0">
-              <h2>Alen Walker’s biography</h2>
+              {/* <h2>Startup Mentor | Wealth Strategist | Immigration Advisor | Visionary Leader </h2>
               <p className="mb-4">
-                A vast majority of the app marketers mainly concentrate on the
-                post-launch app marketing techniques and measures while
-                completely missing on the pre-launch campaign. This prevents the
-                app to create buzz and hype just around the time when the app is
-                launched. As and when you launch the app, already a considerable
-                number of people should expectantly look forward to your app and
-                this requires long-drawn marketing
-              </p>
+              Nabeel Shaikh is a dynamic Chartered Accountant, Investment Banker, and Entrepreneur dedicated to empowering individuals to achieve Financial Independence and Early Retirement (FIRE). As the founder of Fire Up Club.com, he has built a thriving community that helps members design their lives around financial freedom and intentional living. Nabeel’s philosophy revolves around blending technical expertise with practical, personalized mentorship to make financial independence accessible to everyone. 
+              </p> */}
+            <div className="section-title">
+              <span className="sub-content wow fadeInUp">
+                <img src="assets/img/bale.png" alt="img" />
+                About Team Member
+              </span>
+            </div>
               <p>
-                To create pre-launch buzz and hype about the app a mobile app
-                development company has an array of marketing options like
-                social media campaign, search engine ads, video ads, email
-                campaigns, etc. Apart from online options, you can also reach
-                out to the wider audience with traditional marketing
+              With a proven track record as an innovator and leader, Nabeel has launched multiple ventures: 
               </p>
+              <ul className="about-list wow fadeInUp py-2" data-wow-delay=".3s">
+                <li>
+                  <i className="fas fa-check" />
+                    <b>NashFact.com</b> – A leading online publishing platform.
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <b>Mr. Shapatar</b> – A successful UK-based food chain. 
+                </li>
+                <li>
+                  <i className="fas fa-check" />
+                  <b>Ed-Watch.org, Mavens Advisor, and E Blood</b> – High-impact, technology-driven startups demonstrating his ability to merge innovation with financial acumen.
+                </li>
+              </ul>
+              <p className="py-2">As a Startup Mentor at the Startup Launchpad, Nabeel works closely with entrepreneurs, guiding them through business development, funding challenges, and scaling strategies. His unique insights into wealth creation and investment planning make him a sought-after advisor for individuals looking to maximize their assets in real estate and other lucrative markets. His immigration expertise equips clients with actionable steps to navigate global visa and residency pathways, aligning financial goals with international opportunities. </p>
+              <p className="py-2">Nabeel’s mission is deeply rooted in the FIRE principles of financial literacy, sustainable wealth-building, and continuous learning. He believes financial independence is not just a milestone but a lifestyle—one where individuals can prioritize personal growth, time freedom, and purposeful living. Through Fire Up Club, Nabeel empowers members with tools, mentorship, and community support to take control of their financial futures.  </p>
+
               <div className="details-information-area">
+              <h2>Why Nabeel Stands Out</h2>
                 <div className="row g-4 justify-content-between">
-                  <div className="col-lg-5">
+                  {/* <div className="col-lg-5">
                     <div className="progress-wrap">
                       <div className="pro-items">
                         <div className="pro-head">
@@ -111,107 +103,38 @@ const page = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="information-content-items">
+                  </div> */}
+                  <div className="col-lg-12">
+                    <div className="information-content-items g-8">
                       <div className="content-box-area">
                         <div className="content mb-4">
-                          <h3>Next Company</h3>
-                          <p>Web Designer, Figma</p>
+                          <h4>Visionary Leadership</h4>
+                          <p>A trailblazer who bridges financial strategy with technological innovation. </p>
                         </div>
                         <div className="content">
-                          <h3>Moove Ux</h3>
-                          <p>Web Designer, Figma</p>
+                          <h4>Global Perspective</h4>
+                          <p>Experience spanning diverse industries and markets worldwide. </p>
                         </div>
                       </div>
                       <div className="content-box-area">
                         <div className="content mb-4">
-                          <h3>Amazon Company</h3>
-                          <p>Web Designer, Figma</p>
+                          <h4>Mentorship Excellence</h4>
+                          <p>A hands-on mentor offering tailored guidance to startups, professionals, and families alike. </p>
                         </div>
                         <div className="content">
-                          <h3>Modinatheme Company</h3>
-                          <p>Web Designer, Figma</p>
+                          <h4>Empowering Solutions</h4>
+                          <p>Practical strategies for wealth creation and risk management, even for those new to finance. </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <h2>Best Skills</h2>
-              <p>
-                A vast majority of the app marketers mainly concentrate on the
-                post-launch app marketing techniques and measures while
-                completely missing on the pre-launch campaign. This prevents the
-                app to create buzz and hype just around the time when the app is
-                launched. As and when you launch the app, already a considerable
-                number of people should expectantly look forward to your app and
-                this requires long-drawn marketing
-              </p>
+                <p>
+                Nabeel Shaikh’s journey is a testament to the transformative power of strategic planning, intentional living, and the courage to pursue financial freedom. Whether you're an aspiring entrepreneur, a seasoned professional, or someone looking to take the first step toward financial independence, Nabeel’s expertise and passion for helping others make him a trusted guide on your path to success. 
+                </p>
+              
             </div>
-          </div>
-        </div>
-      </section>
-      {/* Contact Section Start */}
-      <section className="contact-section-2 fix section-padding pt-0">
-        <div className="container">
-          <div className="contact-form-items">
-            <div className="title">
-              <h2>Let’s Get in Touch</h2>
-              <p>
-                Your email address will not be published. Required fields are
-                marked *
-              </p>
-            </div>
-            <form action="contact.php" id="contact-form" method="POST">
-              <div className="row g-4">
-                <div className="col-lg-6">
-                  <div className="form-clt">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Your Name*"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="form-clt">
-                    <input
-                      type="text"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email*"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-clt">
-                    <input
-                      type="text"
-                      name="text"
-                      id="text"
-                      placeholder="Website*"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-clt">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Write Message*"
-                      defaultValue={""}
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-7">
-                  <button type="submit" className="theme-btn">
-                    Send Your Meassge
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </section>

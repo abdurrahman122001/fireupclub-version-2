@@ -22,11 +22,29 @@
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/personalized-support/page": [
+    "/saqib-siddiqui/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/personalized-support/page.css",
-      "static/chunks/app/personalized-support/page.js"
+      "static/css/app/saqib-siddiqui/page.css",
+      "static/chunks/app/saqib-siddiqui/page.js"
+    ],
+    "/nafees-mazhar/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/nafees-mazhar/page.css",
+      "static/chunks/app/nafees-mazhar/page.js"
+    ],
+    "/umaima-ansari/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/umaima-ansari/page.css",
+      "static/chunks/app/umaima-ansari/page.js"
+    ],
+    "/imran-kalim/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/imran-kalim/page.css",
+      "static/chunks/app/imran-kalim/page.js"
     ]
   }
 }

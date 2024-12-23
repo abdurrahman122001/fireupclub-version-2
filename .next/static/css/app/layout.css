@@ -18008,7 +18008,7 @@ input.main-search-input::placeholder {
 .about-wrapper .about-content .about-list li {
   color: var(--header);
 }
-.about-wrapper .about-content .about-list li i {
+ .about-list li i {
   color: var(--theme);
   margin-right: 10px;
 }
@@ -19643,6 +19643,25 @@ input.main-search-input::placeholder {
 .team-bg {
   background: var(--header);
 }
+.team-member-title{
+  font-size: 35px;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.team-member-role{
+  color: var(--theme);
+  font-size: 20px;
+}
+.ReactModal__Overlay--after-open{
+  z-index: 99999;
+}
+.ReactModal__Content--after-open{
+    border: none !important;
+    background: #028761 !important;
+    border-radius: 35px !important;
+    padding: 30px !important;
+    color: #fff;
+}
 
 .footer-bg {
   background: var(--bg);
@@ -19846,6 +19865,9 @@ input.main-search-input::placeholder {
 .team-card-items .team-content h4 {
   color: var(--white);
 }
+.team-card-items .team-content h4:hover {
+  color: var(--theme);
+}
 .team-card-items .team-content h4 a:hover {
   color: var(--theme);
 }
@@ -19875,11 +19897,18 @@ input.main-search-input::placeholder {
   margin-top: 30px;
 }
 .about-image img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 80%;
   border-radius: 10px;
 }
-
+.text-items {
+  text-align: justify;
+}
+@media screen and (max-width: 475px){
+  .about-image img {
+    width: 100%;
+  }
+}
 .team-details-wrapper .team-details-image-area {
   position: relative;
   padding-top: 60px;
@@ -19898,8 +19927,8 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: #F9FAFB;
-  height: 85%;
+  background-color: #7bffd91a;
+  height: 95%;
 }
 @media (max-width: 991px) {
   .team-details-wrapper .team-details-image-area::before {
@@ -19937,23 +19966,27 @@ input.main-search-input::placeholder {
   z-index: 9;
 }
 .team-details-wrapper .team-details-image-area .right-content h2 {
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 105%;
   margin-bottom: 5px;
 }
 @media (max-width: 991px) {
   .team-details-wrapper .team-details-image-area .right-content h2 {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 .team-details-wrapper .team-details-image-area .right-content p {
   color: var(--theme);
+  font-size: 16px;
+  font-weight: 500;
 }
 .team-details-wrapper .team-details-image-area .right-content .list {
-  margin-top: 30px;
+  margin-top: 20px;
+  text-align: justify;
 }
 @media (max-width: 991px) {
   .team-details-wrapper .team-details-image-area .right-content .list {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 .team-details-wrapper .team-details-image-area .right-content .list h5 {
@@ -19966,7 +19999,7 @@ input.main-search-input::placeholder {
 }
 .team-details-wrapper .team-details-image-area .right-content .social-icon {
   gap: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 @media (max-width: 991px) {
   .team-details-wrapper .team-details-image-area .right-content .social-icon {
@@ -19997,14 +20030,18 @@ input.main-search-input::placeholder {
 .team-details-wrapper .team-details-content {
   margin-top: -7px;
   margin-bottom: -5px;
+  text-align: justify;
 }
 .team-details-wrapper .team-details-content h2 {
-  font-size: 36px;
+  font-size: 25px;
   margin-bottom: 20px;
+}
+.information-content-items .content-box-area .content h4{
+  color: var(--theme);
 }
 @media (max-width: 575px) {
   .team-details-wrapper .team-details-content h2 {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 .team-details-wrapper .team-details-content .details-information-area {
@@ -22253,19 +22290,19 @@ input.main-search-input::placeholder {
   font-size: 24px;
   font-weight: 600;
 }
-.news-area .main-sidebar .single-sidebar-widget .social-link a {
+ .social-link a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 48px;
   text-align: center;
   border-radius: 50%;
   background-color: #F9FAFB;
-  font-size: 14px;
+  font-size: 20px;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.news-area .main-sidebar .single-sidebar-widget .social-link a:hover {
+ .social-link a:hover {
   background-color: var(--theme);
   color: var(--white);
 }
