@@ -6,6 +6,8 @@ import { useState, useEffect, useRef } from "react";
 import NextLayout from "@/layouts/NextLayout";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
 import Link from "next/link";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 
 const page = () => {
@@ -298,130 +300,30 @@ const page = () => {
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items">
+              <div className="service-offer-items ">
                 <div className="icon">
-                  <img src="assets/img/service/icon/earning.png" alt="img" />
+                  <img src="assets/img/service/icon/tax-planning.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="global-investment">Global Investment Opportunities</Link>
+                      <Link href="tax-planning">
+                        Personalized Tax Planning
+                      </Link>
                     </h3>
-                    <p style={{ fontSize: '14px' }}>Our Global Investment Opportunities service connects you with experienced financial experts who provide insights into international markets.</p>
+                    <p style={{ fontSize: '14px' }}>Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our</p>
                   </div>
-                  <Link href="global-investment" className="arrow-icon">
+                  <Link href="tax-planning" className="btn p-0 border-0 arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
+
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="service-offer-items">
-                <div className="icon">
-                  <img src="assets/img/service/icon/targeted.png" alt="img" />
-                </div>
-                <div className="offer-content">
-                  <div className="content">
-                    <h3>
-                      <Link href="crypto-trading">
-                        Crypto Trading
-                      </Link>
-                    </h3>
-                    <p style={{ fontSize: '14px' }}>We equip you with proven strategies to diversify your portfolio with global investment opportunities, explore the dynamic</p>
-                  </div>
-                  <Link href="crypto-trading" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items">
-                <div className="icon">
-                  <img src="assets/img/service/icon/ecommerce.png" alt="img" />
-                </div>
-                <div className="offer-content">
-                  <div className="content">
-                    <h3>
-                      <Link href="ecommerce">
-                        E-Commerce
-                      </Link>
-                    </h3>
-                    <p style={{ fontSize: '14px' }}>Our service helps aspiring entrepreneurs turn their ideas into successful ventures. Through our consultancy, you receive step-by-step</p>
-                  </div>
-                  <Link href="ecommerce" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="service-offer-items">
-                <div className="icon">
-                  <img
-                    src="assets/img/service/icon/brainstorming.png"
-                    alt="img"
-                  />
-                </div>
-                <div className="offer-content">
-                  <div className="content">
-                    <h3>
-                      <Link href="financial-planning">Financial Planning & Real Estate Investment</Link>
-                    </h3>
-                    <p style={{ fontSize: '14px' }}>Our personalized financial planning services are designed to help you build a strategy that supports your goal</p>
-                  </div>
-                  <Link href="financial-planning" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items">
-                <div className="icon">
-                  <img src="assets/img/service/icon/digital-books.png" alt="img" />
-                </div>
-                <div className="offer-content">
-                  <div className="content">
-                    <h3>
-                      <Link href="digital-books">
-                        Digital Books Creation
-                      </Link>
-                    </h3>
-                    <p style={{ fontSize: '14px' }}>Unlock your earning potential with Fire Up Club’s Digital Books Creation service. Whether you’re an aspiring author</p>
-                  </div>
-                  <Link href="digital-books" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items">
-                <div className="icon">
-                  <img src="assets/img/service/icon/immigration.png" alt="img" />
-                </div>
-                <div className="offer-content">
-                  <div className="content">
-                    <h3>
-                      <Link href="immigration">
-                        Immigration
-                      </Link>
-                    </h3>
-                    <p style={{ fontSize: '14px' }}>We help you develop a robust financial plan, invest in real estate, explore immigration opportunities, and provide</p>
-                  </div>
-                  <Link href="immigration" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="service-offer-items">
+              <div className="service-offer-items ">
                 <div className="icon">
                   <img
                     src="assets/img/service/icon/content-creation.png"
@@ -435,32 +337,148 @@ const page = () => {
                     </h3>
                     <p style={{ fontSize: '14px' }}>Join our Earning Through Content Creation group to learn how to effectively monetize your online presence. Led</p>
                   </div>
-                  <Link href="content-creation" className="arrow-icon">
+                  <Link href="content-creation" className="btn p-0 border-0 arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
+                <div className="icon">
+                  <img src="assets/img/service/icon/earning.png" alt="img" />
+                </div>
+                <div className="offer-content">
+                  <div className="content">
+                    <h3>
+                      <Link href="#">Global Investment Opportunities</Link>
+                    </h3>
+                    <p style={{ fontSize: '14px' }}>Our Global Investment Opportunities service connects you with experienced financial experts who provide insights into international markets.</p>
+                  </div>
+                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div className="row">
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
+                <div className="icon">
+                  <img src="assets/img/service/icon/targeted.png" alt="img" />
+                </div>
+                <div className="offer-content">
+                  <div className="content">
+                    <h3>
+                      <Link href="#">
+                        Crypto Trading
+                      </Link>
+                    </h3>
+                    <p style={{ fontSize: '14px' }}>We equip you with proven strategies to diversify your portfolio with global investment opportunities, explore the dynamic</p>
+                  </div>
+                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
+                <div className="icon">
+                  <img src="assets/img/service/icon/ecommerce.png" alt="img" />
+                </div>
+                <div className="offer-content">
+                  <div className="content">
+                    <h3>
+                      <Link href="#">
+                        E-Commerce
+                      </Link>
+                    </h3>
+                    <p style={{ fontSize: '14px' }}>Our service helps aspiring entrepreneurs turn their ideas into successful ventures. Through our consultancy, you receive step-by-step</p>
+                  </div>
+                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
+                <div className="icon">
+                  <img
+                    src="assets/img/service/icon/brainstorming.png"
+                    alt="img"
+                  />
+                </div>
+                <div className="offer-content">
+                  <div className="content">
+                    <h3>
+                      <Link href="#">Financial Planning & Real Estate Investment</Link>
+                    </h3>
+                    <p style={{ fontSize: '14px' }}>Our personalized financial planning services are designed to help you build a strategy that supports your goal</p>
+                  </div>
+                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
+                <div className="icon">
+                  <img src="assets/img/service/icon/digital-books.png" alt="img" />
+                </div>
+                <div className="offer-content">
+                  <div className="content">
+                    <h3>
+                      <Link href="#">
+                        Digital Books Creation
+                      </Link>
+                    </h3>
+                    <p style={{ fontSize: '14px' }}>Unlock your earning potential with Fire Up Club’s Digital Books Creation service. Whether you’re an aspiring author</p>
+                  </div>
+                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div className="row">
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items">
+              <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
+              data-tooltip-content="The service is comming soon!">
+                <div className="coming-soon-tag">Coming Soon</div>
                 <div className="icon">
-                  <img src="assets/img/service/icon/tax-planning.png" alt="img" />
+                  <img src="assets/img/service/icon/immigration.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="tax-planning">
-                        Personalized Tax Planning
+                      <Link href="#">
+                        Immigration
                       </Link>
                     </h3>
-                    <p style={{ fontSize: '14px' }}>Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our</p>
+                    <p style={{ fontSize: '14px' }}>We help you develop a robust financial plan, invest in real estate, explore immigration opportunities, and provide</p>
                   </div>
-                  <Link href="tax-planning" className="arrow-icon">
-                    <i className="far fa-arrow-right" />
+                  <Link href="#"className="btn p-0 border-0 arrow-icon disabled">
+                    <i className="far fa-lock" />
                   </Link>
                 </div>
               </div>
@@ -468,6 +486,7 @@ const page = () => {
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
           </div>
+          <Tooltip id="locked-tooltip" place="top" effect="solid" />
         </div>
       </section>
       {/* Team Section Start */}

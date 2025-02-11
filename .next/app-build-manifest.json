@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/nafees-mazhar/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/nafees-mazhar/page.css",
-      "static/chunks/app/nafees-mazhar/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
