@@ -5,13 +5,13 @@ import Link from "next/link";
 const page = () => {
   return (
     <NextLayout header={3} footer={3} single>
-      <Breadcrumb pageName="Our Services" pageTitle="Personalized Tax Planning" />
+      <Breadcrumb pageName="Our Services" pageTitle="Personalized Financial Planning" />
             {/* About Section Start */}
             <section className="about-section fix section-padding pb-0">
               <div className="container">
                 <div className="about-wrapper">
-                  <div className="row g-4 align-items-center justify-content-between">
-                    <div className="col-lg-5">
+                  <div className="row g-5 align-items-center justify-content-between">
+                    <div className="col-lg-6">
                       <div className="about-content ms-0">
                         <div className="section-title">
                           <span className="sub-content wow fadeInUp">
@@ -19,29 +19,38 @@ const page = () => {
                             Our Services
                           </span>
                           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                          Personalized Tax Planning
+                          Personalized Financial Planning
                           </h2>
                         </div>
                         <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                        Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our expert tax professionals provide tailored advice to streamline both personal and corporate tax strategies. Learn how to maximize contributions to tax-advantaged accounts, leverage deductions, and utilize tax credits to minimize liabilities and enhance your financial efficiency.
+                          Without a clear financial plan, managing money can feel overwhelming. At Fire Up Club, our expert Chartered Accountants create a personalized strategy based on your unique goals, lifestyle, and financial situation. Whether you're looking to save more, eliminate financial stress, or build a secure future, we provide step-by-step guidance to help you stay on track. With expert advice tailored just for you, you’ll gain the clarity and confidence to make the right financial decisions.
                         </p>
+                        
                         <ul className="about-list wow fadeInUp" data-wow-delay=".3s">
-                          <h3>Benefits:</h3>
+                          <h3 className="mb-2">Why It Matters</h3>
                           <li>
                             <i className="fas fa-check" />
-                            Significant Tax Savings - Reduce your tax burden with strategies designed to maximize savings and efficiency.
+                            Customized Roadmap – A financial plan designed just for you
                           </li>
                           <li>
                             <i className="fas fa-check" />
-                            Expert Guidance - Navigate complex tax regulations with the help of seasoned professionals who provide clear, actionable advice.
+                            Clarity & Confidence – Make informed decisions with expert guidance
                           </li>
                           <li>
                             <i className="fas fa-check" />
-                            Improved Financial Efficiency - Optimize your financial planning by integrating tax-saving strategies into your overall financial plan.
+                            Step-by-Step Support – Navigate every stage of your financial journey
+
+                          </li>
+                          <li>
+                            <i className="fas fa-check" />
+                            One-on-One Expert Advice – Get personalized insights, not generic solutions
+
                           </li>
                         </ul>
+                        <p className="mt-4  wow fadeInUp font-weight-bold" data-wow-delay=".7s">Tailored Plans | Expert Insights | Continuous Support | Actionable Steps</p>
+                        <p className="mt-3  wow fadeInUp font-weight-bold" data-wow-delay=".7s">Take control of your financial future today! Get your personalized financial plan now!</p>
                         <div
-                          className="about-button mt-5 wow fadeInUp"
+                          className="about-button mt-4 wow fadeInUp"
                           data-wow-delay=".5s"
                         >
                           <Link href="Subscription" className="theme-btn">
@@ -84,6 +93,27 @@ const page = () => {
                       </div>
                     </div>
                   </div>
+                  {/* <div className="row g-4 align-items-center justify-content-between">
+                    <div className="col-md-12 wow fadeInUp">
+                      <ul className="about-list wow fadeInUp" data-wow-delay=".3s">
+                              <h3>How Fire Up Club Helps </h3>
+                              <li>
+                              🚀 Tailored Plans – Custom financial strategies designed for YOU
+                              </li>
+                              <li>
+                              📈 Expert Insights – Experts with proven success
+                              </li>
+                              <li>
+                              🤝 Ongoing Support – Stay on track with continuous guidance
+
+                              </li>
+                              <li>
+                              💡 Practical Steps – Simple, actionable strategies for real results
+
+                              </li>
+                      </ul>
+                    </div>
+                  </div> */}
                 </div>
               </div>
             </section>

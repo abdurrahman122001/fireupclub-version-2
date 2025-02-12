@@ -1,5 +1,8 @@
 {
+  "/ecommerce/page": "app/ecommerce/page.js",
+  "/financial-planning/page": "app/financial-planning/page.js",
   "/page": "app/page.js",
+  "/personal-branding/page": "app/personal-branding/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

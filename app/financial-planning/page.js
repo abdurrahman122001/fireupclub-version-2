@@ -5,13 +5,13 @@ import Link from "next/link";
 const page = () => {
   return (
     <NextLayout header={3} footer={3} single>
-      <Breadcrumb pageName="Our Services" pageTitle="Financial Planning" />
+      <Breadcrumb pageName="Our Services" pageTitle="Personalized Financial Planning" />
             {/* About Section Start */}
             <section className="about-section fix section-padding pb-0">
               <div className="container">
                 <div className="about-wrapper">
                   <div className="row g-4 align-items-center justify-content-between">
-                    <div className="col-lg-5">
+                    <div className="col-lg-6">
                       <div className="about-content ms-0">
                         <div className="section-title">
                           <span className="sub-content wow fadeInUp">
@@ -19,31 +19,38 @@ const page = () => {
                             Our Services
                           </span>
                           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                          Financial Planning and Real Estate Investment
+                          Personalized Financial Planning
                           </h2>
                         </div>
                         <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                        <b>Financial Planning</b> – Build a customized roadmap to grow your wealth, achieve financial stability, and set yourself up for a secure future.
+                          Without a clear financial plan, managing money can feel overwhelming. At Fire Up Club, our expert Chartered Accountants create a personalized strategy based on your unique goals, lifestyle, and financial situation. Whether you're looking to save more, eliminate financial stress, or build a secure future, we provide step-by-step guidance to help you stay on track. With expert advice tailored just for you, you’ll gain the clarity and confidence to make the right financial decisions.
                         </p>
-                        <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                        <b>Real Estate Investment</b> – Explore high-return property opportunities worldwide, from capital gains to rental income and Airbnb strategies, designed to maximize your ROI.
-                        </p>
+                        
                         <ul className="about-list wow fadeInUp" data-wow-delay=".3s">
+                          <h3 className="mb-2">Why It Matters</h3>
                           <li>
                             <i className="fas fa-check" />
-                            Personalized Wealth-Building Plans – Tailored financial strategies to align with your goals.
+                            Customized Roadmap – A financial plan designed just for you
                           </li>
                           <li>
                             <i className="fas fa-check" />
-                            Global Investment Opportunities – Expert guidance on high-potential real estate investments.
+                            Clarity & Confidence – Make informed decisions with expert guidance
                           </li>
                           <li>
                             <i className="fas fa-check" />
-                            Accelerate Your Path to Financial Freedom – Proven strategies for sustainable, long-term growth.
+                            Step-by-Step Support – Navigate every stage of your financial journey
+
+                          </li>
+                          <li>
+                            <i className="fas fa-check" />
+                            One-on-One Expert Advice – Get personalized insights, not generic solutions
+
                           </li>
                         </ul>
+                        <p className="mt-4  wow fadeInUp font-weight-bold" data-wow-delay=".7s">Tailored Plans | Expert Insights | Continuous Support | Actionable Steps</p>
+                        <p className="mt-3  wow fadeInUp font-weight-bold" data-wow-delay=".7s">Take control of your financial future today! Get your personalized financial plan now!</p>
                         <div
-                          className="about-button mt-5 wow fadeInUp"
+                          className="about-button mt-4 wow fadeInUp"
                           data-wow-delay=".5s"
                         >
                           <Link href="Subscription" className="theme-btn">

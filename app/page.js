@@ -299,27 +299,28 @@ const page = () => {
           <div className="row">
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-offer-items ">
+
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div className="service-offer-items" >
                 <div className="icon">
-                  <img src="assets/img/service/icon/tax-planning.png" alt="img" />
+                  <img
+                    src="assets/img/service/icon/brainstorming.png"
+                    alt="img"
+                  />
                 </div>
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="tax-planning">
-                        Personalized Tax Planning
-                      </Link>
+                      <Link href="financial-planning">Personalized Financial Planning</Link>
                     </h3>
-                    <p style={{ fontSize: '14px' }}>Achieve optimal tax efficiency and maximize your savings with Fire Up Club’s Personalized Tax Planning service. Our</p>
+                    <p style={{ fontSize: '14px' }}>At Fire Up Club, our expert Chartered Accountants create a personalized strategy based on your unique goals, lifestyle, and financial situation. </p>
                   </div>
-                  <Link href="tax-planning" className="btn p-0 border-0 arrow-icon">
+                  <Link href="financial-planning" className="btn p-0 border-0 arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
-
             <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
@@ -333,11 +334,11 @@ const page = () => {
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="content-creation">Content Creation Personal Branding</Link>
+                      <Link href="personal-branding">Personal Branding </Link>
                     </h3>
-                    <p style={{ fontSize: '14px' }}>Join our Earning Through Content Creation group to learn how to effectively monetize your online presence. Led</p>
+                    <p style={{ fontSize: '14px' }}>At Fire Up Club, we help professionals, entrepreneurs, and investors establish a powerful brand that positions them as industry leaders.</p>
                   </div>
-                  <Link href="content-creation" className="btn p-0 border-0 arrow-icon">
+                  <Link href="personal-branding" className="btn p-0 border-0 arrow-icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                 </div>
@@ -410,24 +411,23 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-offer-items locked" data-tooltip-id="locked-tooltip"
               data-tooltip-content="The service is comming soon!">
-                <div className="coming-soon-tag">Coming Soon</div>
+              <div className="coming-soon-tag">Coming Soon</div>
                 <div className="icon">
-                  <img
-                    src="assets/img/service/icon/brainstorming.png"
-                    alt="img"
-                  />
+                  <img src="assets/img/service/icon/tax-planning.png" alt="img" />
                 </div>
                 <div className="offer-content">
                   <div className="content">
                     <h3>
-                      <Link href="#">Financial Planning & Real Estate Investment</Link>
+                      <Link href="#">
+                        Personalized Tax Planning
+                      </Link>
                     </h3>
-                    <p style={{ fontSize: '14px' }}>Our personalized financial planning services are designed to help you build a strategy that supports your goal</p>
+                    <p style={{ fontSize: '14px' }}>At Fire Up Club, our expert Chartered Accountants create a personalized strategy based on your unique goals, lifestyle, and financial situation.</p>
                   </div>
-                  <Link href="#" className="btn p-0 border-0 arrow-icon disabled">
+                  <Link href="tax-planning" className="btn p-0 border-0 arrow-icon">
                     <i className="far fa-lock" />
                   </Link>
                 </div>
@@ -455,7 +455,6 @@ const page = () => {
                 </div>
               </div>
             </div>
-
 
           </div>
           <div className="row">
