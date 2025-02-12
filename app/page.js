@@ -427,7 +427,7 @@ const page = () => {
                     </h3>
                     <p style={{ fontSize: '14px' }}>At Fire Up Club, our expert Chartered Accountants create a personalized strategy based on your unique goals, lifestyle, and financial situation.</p>
                   </div>
-                  <Link href="tax-planning" className="btn p-0 border-0 arrow-icon">
+                  <Link href="" className="btn p-0 border-0 arrow-icon disabled">
                     <i className="far fa-lock" />
                   </Link>
                 </div>
