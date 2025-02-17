@@ -1,6 +1,7 @@
 "use client";
 import Counter from "@/components/Counter";
 import GrowBusiness from "@/components/GrowBusiness";
+import Pricing2 from "@/components/Pricing";
 import Team from "@/components/Team";
 import { useState, useEffect, useRef } from "react";
 import NextLayout from "@/layouts/NextLayout";
@@ -603,9 +604,11 @@ const page = () => {
       {/* Grow Business Section Start */}
       <GrowBusiness />
       {/* Working Process Section Start */}
+      
+      {/* pricing  */}
+      <Pricing2 />
 
-
-      <section className="testimonial-section-5 fix section-padding fix pt-0" id="clients">
+      <section className="testimonial-section-5 fix section-padding fix" id="clients">
         <div className="container">
           <div className="section-title text-center">
             <span className="sub-content wow fadeInUp">

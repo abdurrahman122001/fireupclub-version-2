@@ -14224,7 +14224,7 @@ Version: 1.0.0
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
-  padding: 20px 35px;
+  padding: 22px 40px;
   transition: all 0.4s ease-in-out;
   letter-spacing: 0;
   border-radius: 35px;
@@ -21578,13 +21578,13 @@ input.main-search-input::placeholder {
 }
 
 .pricing-section-2 {
-  background-color: #EFEBFF;
+  background-color: #7bffda0c;
 }
 
 .pricing-card-items-2 {
   margin-top: 30px;
   background-color: var(--white);
-  box-shadow: 0px 10px 60px rgba(92, 48, 253, 0.1);
+  box-shadow: 0px 10px 60px #7bffda56;
   padding: 40px 45px;
   border-radius: 10px;
 }
@@ -21596,10 +21596,17 @@ input.main-search-input::placeholder {
 }
 .pricing-card-items-2 .pricing-button .theme-btn {
   width: 100%;
-  background-color: var(--header);
+  background: var(--bg2);
+  border-radius: 14px !important;
 }
-.pricing-card-items-2 .pricing-button .theme-btn::before, .pricing-card-items-2 .pricing-button .theme-btn::after {
+.pricing-card-items-2.active .pricing-button .theme-btn {
+  background: var(--theme);
+}
+ .pricing-card-items-2 .pricing-button .theme-btn::after {
   background-color: var(--theme);
+}
+.pricing-card-items-2.active .pricing-button .theme-btn::before{
+  content: unset;
 }
 .pricing-card-items-2 .price-items {
   position: relative;
@@ -21622,7 +21629,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card-items-2 .price-items h2 span {
   font-size: 16px;
-  color: var(--header);
+  color: #171420;
 }
 .pricing-card-items-2 .price-items .discount {
   position: absolute;
@@ -21642,7 +21649,7 @@ input.main-search-input::placeholder {
   height: 65px;
   content: "";
   transform: translate(-50%, -50%);
-  background-image: url(/_next/static/media/pricing-radius.1bbddac1.png);
+  background-image: url(/_next/static/media/pricing-radius.59e74635.png);
   z-index: -1;
 }
 .pricing-card-items-2 .price-items .discount h6 {
@@ -21654,7 +21661,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card-items-2 .price-list li {
   font-size: 18px;
-  color: var(--header);
+  color: #171420;
 }
 .pricing-card-items-2 .price-list li:not(:last-child) {
   margin-bottom: 15px;
@@ -21683,7 +21690,7 @@ input.main-search-input::placeholder {
   color: var(--header);
 }
 .pricing-card-items-2.active .price-items {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #ffffff61;
 }
 .pricing-card-items-2.active .price-items .arrow-img {
   filter: grayscale(100%) brightness(300%);
