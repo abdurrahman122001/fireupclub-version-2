@@ -8414,9 +8414,11 @@ input.main-search-input::placeholder {
 .pricing-section-2 {
   background-color: #7bffda0c;
 }
-.pricing-small {
-  flex-wrap: nowrap;
-  overflow-x: auto;
+@media screen and (max-width: 1199.98px) {
+  .pricing-small {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
 }
 .pricing-card-items-2 {
   margin-top: 30px;
