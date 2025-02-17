@@ -17,7 +17,7 @@ import Link from "next/link";
             keep Under Budget
           </h2>
         </div>
-        <div className="row">
+        <div className="row pb-2 pricing-small">
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".3s"
