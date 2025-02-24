@@ -21580,13 +21580,20 @@ input.main-search-input::placeholder {
 .pricing-section-2 {
   background-color: #7bffda0c;
 }
-
+@media screen and (max-width: 1199.98px) {
+  .pricing-small {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
 .pricing-card-items-2 {
   margin-top: 30px;
   background-color: var(--white);
   box-shadow: 0px 10px 60px #7bffda56;
   padding: 40px 45px;
   border-radius: 10px;
+  min-height: 600px;
+  height: 610px;
 }
 .pricing-card-items-2 .pricing-header h3 {
   margin-bottom: 10px;

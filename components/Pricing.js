@@ -13,8 +13,7 @@ import Link from "next/link";
               Pricing Package
           </span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-            We Offer Amazing Pricing Package <br />
-            keep Under Budget
+            Choose Your Plan & Start Growing
           </h2>
         </div>
         <div className="row pb-2 pricing-small">
@@ -24,10 +23,9 @@ import Link from "next/link";
           >
             <div className="pricing-card-items-2">
               <div className="pricing-header">
-                <h3>Regular Plan</h3>
+                <h3>Monthly Plan</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis istewse natus sit voluptatem
-                  accusa
+                  Perfect for those looking to get started
                 </p>
               </div>
               <div className="pricing-button">
@@ -37,7 +35,7 @@ import Link from "next/link";
               </div>
               <div className="price-items">
                 <h2>
-                  <sub>$</sub>12 <span>/month</span>
+                  <sub>$</sub>10 <span>/month</span>
                 </h2>
                 <div className="discount">
                   <h6>
@@ -52,23 +50,19 @@ import Link from "next/link";
               <ul className="price-list">
                 <li>
                   <i className="far fa-check" />
-                  Blog &amp; Article Copy
+                  One-on-One Expert Sessions
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  eCommerce Copy
+                  Personlized Financial & Branding Plans
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  Social Media Copy
+                  Step-by-Step Guidance
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  Content Writing
-                </li>
-                <li>
-                  <i className="far fa-check" />
-                  Ad Providing
+                  Access to Exclusive Resources & Community
                 </li>
               </ul>
             </div>
@@ -79,10 +73,9 @@ import Link from "next/link";
           >
             <div className="pricing-card-items-2 active">
               <div className="pricing-header">
-                <h3>Standard Plan</h3>
+                <h3>6-Month Plan</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis istewse natus sit voluptatem
-                  accusa
+                  Best for consistent progress and deeper insights!
                 </p>
               </div>
               <div className="pricing-button">
@@ -92,12 +85,12 @@ import Link from "next/link";
               </div>
               <div className="price-items">
                 <h2>
-                  <sub>$</sub>45<span>/month</span>
+                  <sub>$</sub>55<span>/6 months</span>
                 </h2>
                 <div className="discount">
                   <h6>
-                    23% <br />
-                    OFF
+                    Save <br />
+                    $5!
                   </h6>
                 </div>
                 <div className="arrow-img">
@@ -107,23 +100,15 @@ import Link from "next/link";
               <ul className="price-list">
                 <li>
                   <i className="far fa-check" />
-                  Blog &amp; Article Copy
+                  Everything in the Monthly Plan
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  eCommerce Copy
+                  Long-Term Strategy Optimization
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  Social Media Copy
-                </li>
-                <li>
-                  <i className="far fa-check" />
-                  Content Writing
-                </li>
-                <li>
-                  <i className="far fa-check" />
-                  Ad Providing
+                  Additional Expert Insights & Priority Support
                 </li>
               </ul>
             </div>
@@ -134,10 +119,9 @@ import Link from "next/link";
           >
             <div className="pricing-card-items-2">
               <div className="pricing-header">
-                <h3>Premium Plan</h3>
+                <h3>Annual Plan (Best Value)</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis istewse natus sit voluptatem
-                  accusa
+                  The ultimate plan for long-term success!
                 </p>
               </div>
               <div className="pricing-button">
@@ -147,12 +131,12 @@ import Link from "next/link";
               </div>
               <div className="price-items">
                 <h2>
-                  <sub>$</sub>98<span>/month</span>
+                  <sub>$</sub>100<span>/month</span>
                 </h2>
                 <div className="discount">
                   <h6>
-                    23% <br />
-                    OFF
+                    Save <br />
+                    $20!
                   </h6>
                 </div>
                 <div className="arrow-img">
@@ -162,23 +146,15 @@ import Link from "next/link";
               <ul className="price-list">
                 <li>
                   <i className="far fa-check" />
-                  Blog &amp; Article Copy
+                  Everything in the 6 Month Plan
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  eCommerce Copy
+                  Ongoing Accountability & Follow-Ups
                 </li>
                 <li>
                   <i className="far fa-check" />
-                  Social Media Copy
-                </li>
-                <li>
-                  <i className="far fa-check" />
-                  Content Writing
-                </li>
-                <li>
-                  <i className="far fa-check" />
-                  Ad Providing
+                  VIP Access to Advanced Strategies & Exclusive Events
                 </li>
               </ul>
             </div>
