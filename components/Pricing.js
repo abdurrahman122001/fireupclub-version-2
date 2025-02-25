@@ -29,7 +29,7 @@ import Link from "next/link";
                 </p>
               </div>
               <div className="pricing-button">
-                <Link href="contact" className="theme-btn bg-header">
+                <Link href="Subscription" className="theme-btn bg-header">
                   Choose Package
                 </Link>
               </div>
@@ -79,7 +79,7 @@ import Link from "next/link";
                 </p>
               </div>
               <div className="pricing-button">
-                <Link href="contact" className="theme-btn bg-header">
+                <Link href="Subscription" className="theme-btn bg-header">
                   Choose Package
                 </Link>
               </div>
@@ -125,7 +125,7 @@ import Link from "next/link";
                 </p>
               </div>
               <div className="pricing-button">
-                <Link href="contact" className="theme-btn bg-header">
+                <Link href="Subscription" className="theme-btn bg-header">
                   Choose Package
                 </Link>
               </div>
