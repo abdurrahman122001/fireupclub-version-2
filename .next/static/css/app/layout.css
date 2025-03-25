@@ -21678,7 +21678,7 @@ input.main-search-input::placeholder {
   margin-right: 10px;
 }
 .pricing-card-items-2.active {
-  background-color: var(--theme);
+  background: var(--bg2);
 }
 .pricing-card-items-2.active .pricing-header h3 {
   color: var(--white);

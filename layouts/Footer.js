@@ -403,6 +403,7 @@ const Footer2 = () => {
 };
 
 const Footer3 = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer-section footer-bg">
       <div className="container">
@@ -490,16 +491,6 @@ const Footer3 = () => {
                       </a>
                     </div>
                   </div>
-                  {/* <div className="contact-items color-style-2">
-                    <div className="icon">
-                      <i className="fas fa-phone-alt" />
-                    </div>
-                    <div className="content">
-                      <h4>
-                        <a href="tel:00012345688">+000 (123) 456 88</a>
-                      </h4>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -528,22 +519,11 @@ const Footer3 = () => {
       <div className="footer-bottom style-2">
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between pb-0">
-            {/* <ul className="footer-menu">
-              <li>
-                <Link href="faq">FAQs</Link>
-              </li>
-              <li>
-                <Link href="about">Company</Link>
-              </li>
-              <li>
-                <Link href="contact">Privacy</Link>
-              </li>
-            </ul> */}
             <a href="#" id="scrollUp" className="scroll-icon">
               <i className="far fa-angle-double-up" />
             </a>
             <p>
-            Copyright © <Link href="/">2024</Link> All Rights Reserved. Powered by <Link style={{color: '#13c88f'}} href="https://brannovate.com/"> Brannovate</Link>
+            Copyright © <Link href="/">{currentYear}</Link> All Rights Reserved. Powered by <Link style={{color: '#13c88f'}} href="https://brannovate.com/"> Brannovate</Link>
             </p>
           </div>
         </div>
